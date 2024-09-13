@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Práticas de Segurança</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Informações sobre boas práticas de segurança em desenvolvimento de software.">
+</head>
+<body>
+    <header>
+        <h1>Boas Práticas de Segurança</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                <li><a href="exemplos.html">Exemplos Práticos</a></li>
+                <li><a href="recursos.html">Recursos Extras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Criptografia</h2>
+            <p>A criptografia é essencial para proteger dados sensíveis. Utilize algoritmos modernos como AES para garantir que os dados estejam seguros durante o armazenamento e a transmissão.</p>
+            <p>Exemplo de algoritmo AES:</p>
+            <pre><code>
+                // Exemplo de criptografia AES com a biblioteca CryptoJS
+                const CryptoJS = require('crypto-js');
+
+                // Encriptar
+                const ciphertext = CryptoJS.AES.encrypt('Minha mensagem', 'senha-secreta').toString();
+
+                // Decriptar
+                const bytes = CryptoJS.AES.decrypt(ciphertext, 'senha-secreta');
+                const originalText = bytes.toString(CryptoJS.enc.Utf8);
+                console.log(originalText); // Minha mensagem
+            </code></pre>
+        </section>
+        <section>
+            <h2>Autenticação</h2>
+            <p>Implemente autenticação forte para garantir que apenas usuários autorizados possam acessar o sistema. Considere o uso de autenticação multifatorial (MFA) para adicionar uma camada extra de segurança.</p>
+            <p>Exemplo de MFA:</p>
+            <pre><code>
+                // Exemplo básico de MFA
+                const otp = generateOTP(); // Função para gerar um código OTP
+                sendOTPToUser(otp); // Função para enviar o OTP ao usuário
+
+                // Função para verificar o OTP
+                function verifyOTP(inputOTP) {
+                    if (inputOTP === otp) {
+                        console.log('Autenticação bem-sucedida');
+                    } else {
+                        console.log('OTP inválido');
+                    }
+                }
+            </code></pre>
+        </section>
+        <section>
+            <h2>Controle de Acesso</h2>
+            <p>Utilize controle de acesso baseado em funções e permissões para garantir que os usuários só possam acessar recursos para os quais têm autorização.</p>
+            <p>Exemplo de controle de acesso:</p>
+            <pre><code>
+                // Exemplo básico de controle de acesso
+                const userRole = 'admin'; // O papel do usuário
+
+                function checkAccess(role) {
+                    if (userRole === role) {
+                        console.log('Acesso concedido');
+                    } else {
+                        console.log('Acesso negado');
+                    }
+                }
+
+                checkAccess('admin'); // Acesso concedido
+                checkAccess('user');  // Acesso negado
+            </code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Faculdade Dom Alberto. Todos os direitos reservados.</p>
+        <p><a href="https://www.linkedin.com/in/seuperfil" target="_blank">Perfil no LinkedIn</a></p>
+    </footer>
+</body>
+</html>
