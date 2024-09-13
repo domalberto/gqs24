@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Práticos de Segurança</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Exemplos práticos de implementação de segurança em sistemas de software.">
+</head>
+<body>
+    <header>
+        <h1>Exemplos Práticos de Segurança</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                <li><a href="exemplos.html">Exemplos Práticos</a></li>
+                <li><a href="recursos.html">Recursos Extras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulário de Login Seguro</h2>
+            <p>Veja como implementar um formulário de login seguro, validando entradas e protegendo contra ataques comuns.</p>
+            <form id="loginForm">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+                <div id="message"></div>
+            </form>
+        </section>
+        <section>
+            <h2>Proteção Contra XSS</h2>
+            <p>Exemplo de proteção contra Cross-Site Scripting (XSS) usando a função encodeURIComponent para evitar injeção de scripts maliciosos.</p>
+            <pre><code>
+                // Proteção contra XSS
+                function sanitizeInput(input) {
+                    return encodeURIComponent(input);
+                }
+
+                const userInput = '<script>alert("XSS")</script>';
+                const safeInput = sanitizeInput(userInput);
+                console.log(safeInput); // %3Cscript%3Ealert(%22XSS%22)%3C/script%3E
+            </code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Faculdade Dom Alberto. Todos os direitos reservados.</p>
+        <p><a href="https://www.linkedin.com/in/seuperfil" target="_blank">Perfil no LinkedIn</a></p>
+    </footer>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
