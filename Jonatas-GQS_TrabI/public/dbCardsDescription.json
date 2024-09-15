@@ -1,0 +1,22 @@
+{
+    "cards": [
+        {   
+            "id": 1,
+            "image": "/src/assets/images/profile.jpg",
+            "title": "Multidisplinaridade e inovação",
+            "description": "A graduação em Engenharia da Computação é um curso multidisciplinar que integra conhecimentos de hardware e software, preparando profissionais para projetar, desenvolver e gerenciar sistemas computacionais complexos. Ao longo da formação, o estudante adquire habilidades em áreas como programação, eletrônica, sistemas digitais, redes de computadores, inteligência artificial, robótica e segurança da informação."           
+        },
+        {
+            "id": 2,
+            "image": "/src/assets/images/coding.jpg",
+            "title": "Multiatuação",
+            "description": "Com ênfase em inovação tecnológica, o curso forma engenheiros capazes de atuar em setores como indústria automotiva, telecomunicações, tecnologia da informação, automação e desenvolvimento de sistemas embarcados, com uma forte demanda no mercado por profissionais aptos a enfrentar os desafios da transformação digital."
+        },
+        {
+            "id": 3,
+            "image": "/src/assets/images/discussion.jpg",
+            "title": "Visão critica",
+            "description": "Além das disciplinas técnicas, a graduação inclui aspectos de gestão de projetos e empreendedorismo, capacitando o aluno a liderar equipes e criar soluções tecnológicas inovadoras. Os engenheiros da computação são peças-chave no desenvolvimento de novas tecnologias, desde a criação de dispositivos inteligentes até a automação de processos industriais e a melhoria de infraestruturas tecnológicas globais."
+        }
+    ]
+}
