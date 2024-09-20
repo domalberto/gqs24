@@ -49,21 +49,19 @@ ul li {
     padding: 10px;
 }
 .menu a:hover {
-    background-color: #ffff00; /* Amarelo */
+    background-color: #1e0acf; /* Amarelo */
     color: #000; /* Preto */
 }
-
 .content.active {
     display: block;
 }
-.slide {
-    display: none;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.slide.active {
-    display: block;
-}
-.slide img {
-    width: 100%;
+.gallery img {
+    width: calc(33.333% - 10px);
     height: auto;
-    object-fit: none; 
+    object-fit: cover;
 }
