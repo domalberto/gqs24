@@ -62,37 +62,3 @@ ul li {
 .slide.active {
     display: block;
 }
-
-.content.active {
-    display: block;
-}
-.gallery {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-}
-.gallery img {
-    display: none;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.gallery img.active {
-    display: block;
-}
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-button.prev {
-    left: 10px;
-}
-button.next {
-    right: 10px;
-}
