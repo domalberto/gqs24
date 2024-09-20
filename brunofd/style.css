@@ -15,6 +15,11 @@ header {
     margin: auto;
     overflow: hidden;
 }
+.content {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
 h1,h4 {
     color: #1605ac; 
 }
@@ -30,6 +35,8 @@ ul li {
     margin: 5px 0;
     padding: 10px;
 }
+
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -41,13 +48,21 @@ ul li {
     text-decoration: none;
     padding: 10px;
 }
-
-.content {
-    display: none;
-    background: #fff; /* Branco */
-    padding: 20px;
-    margin-top: 20px;
+.menu a:hover {
+    background-color: #ffff00; /* Amarelo */
+    color: #000; /* Preto */
 }
+
+.content.active {
+    display: block;
+}
+.slide {
+    display: none;
+}
+.slide.active {
+    display: block;
+}
+
 .content.active {
     display: block;
 }
