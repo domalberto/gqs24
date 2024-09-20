@@ -35,3 +35,30 @@ ul li {
     margin: 5px 0;
     padding: 10px;
 }
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.menu a:hover {
+    background-color: #ffff00; /* Amarelo */
+    color: #000; /* Preto */
+}
+
+.content.active {
+    display: block;
+}
+.slide {
+    display: none;
+}
+.slide.active {
+    display: block;
+}
