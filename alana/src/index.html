@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <script src="index.js"></script>
+    <title>Dom Alberto</title>
+  </head>
+
+  <body class="p-0 h-full font-sans">
+    <header
+      class="flex flex-wrap justify-between items-center px-5 py-1 shadow-lg bg-white sticky top-0 z-50"
+    >
+      <img
+        src="assets/logo.png"
+        alt="Logo Dom Alberto"
+        class="logo w-20 md:w-28"
+      />
+      <nav class="text-blue-950 gap-4 flex font-semibold">
+        <a onclick="handleClick('home')" class="hover:underline" href="#home"
+          >Início</a
+        >
+        <a onclick="handleClick('sobre')" class="hover:underline" href="#sobre"
+          >Sobre</a
+        >
+        <a
+          onclick="handleClick('parcerias')"
+          class="hover:underline"
+          href="#parcerias"
+          >Parcerias</a
+        >
+        <a
+          onclick="handleClick('contato')"
+          class="hover:underline"
+          href="#contato"
+          >Contato</a
+        >
+      </nav>
+    </header>
+
+    <main class="grid gap-6 px-2">
+      <section id="home">
+        <div
+          class="relative h-[60vh] bg-[url('assets/banner.jpg')] bg-cover bg-center bg-clip-content rounded-b-lg"
+        >
+          <div
+            class="absolute text-right top-0 left-0 w-full h-full bg-gradient-to-r from-black/15 via-black/50 to-blue-950 flex flex-col justify-end items-end rounded-b-lg text-white font-bold p-5"
+          >
+            <p>Graduação presencial</p>
+            <h1 class="text-3xl md:text-5xl">ENGENHARIA DA COMPUTAÇÃO</h1>
+            <p>4240H</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="container mx-auto grid gap-5">
+        <div class="flex items-center gap-4">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-3xl font-bold text-blue-950">Sobre o curso</h2>
+            <p class="text-lg text-gray-700 leading-relaxed flex-1">
+              O curso de Engenharia da Computação é uma graduação que prepara o
+              estudante para atuar no desenvolvimento de sistemas
+              computacionais, desde o hardware até o software. Durante o curso,
+              o aluno aprende sobre programação, algoritmos, redes de
+              computadores, sistemas operacionais, inteligência artificial,
+              entre outros temas. Além disso, o curso oferece disciplinas
+              práticas e projetos que permitem ao estudante aplicar o
+              conhecimento teórico na resolução de problemas reais. Ao concluir
+              a graduação, o engenheiro da computação estará apto a trabalhar em
+              diversas áreas, como desenvolvimento de software, engenharia de
+              sistemas, segurança da informação, automação industrial e
+              robótica, entre outras.
+            </p>
+          </div>
+          <img
+            src="assets/estudante.png"
+            alt="Engenharia da Computação"
+            width="250"
+            class="flex-shrink-0"
+          />
+        </div>
+
+        <h3 class="text-2xl font-bold text-blue-950">Áreas de atuação</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/processo-interno.png"
+              alt="Desenvolvimento de Software"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">Desenvolvimento de Software</h3>
+            <p>
+              Criação de aplicativos, sistemas operacionais, jogos e outros
+              tipos de software.
+            </p>
+          </div>
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/codigo.png"
+              alt="Engenharia de Sistemas"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">Engenharia de Sistemas</h3>
+            <p>
+              Projeto, construção e manutenção de sistemas computacionais,
+              incluindo hardware, software e redes de computadores.
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/seguranca.png"
+              alt="Segurança da Informação"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">Segurança da Informação</h3>
+            <p>
+              Proteção de sistemas computacionais contra ataques cibernéticos e
+              desenvolvimento de soluções de segurança.
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/automacao.png"
+              alt="Automação Industrial e Robótica"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">
+              Automação Industrial e Robótica
+            </h3>
+            <p>
+              Desenvolvimento de sistemas automatizados e robôs para melhorar a
+              eficiência e a precisão em processos industriais.
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/servidor.png"
+              alt="Desenvolvimento de Hardware"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">Desenvolvimento de Hardware</h3>
+            <p>
+              Projeto e construção de componentes de hardware, como placas de
+              circuito, processadores e outros dispositivos eletrônicos.
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/inteligencia-artificial.png"
+              alt="Inteligência artificial"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">Inteligência artificial</h3>
+            <p>
+              Desenvolvimento de sistemas de IA, como chatbots, sistemas de
+              recomendação e aprendizado de máquina.
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/ciencia-de-dados.png"
+              alt="Ciência de Dados"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">Ciência de Dados</h3>
+            <p>
+              Coleta, análise e visualização de dados para ajudar na tomada de
+              decisões informadas.
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/redes.png"
+              alt="Redes de computadores"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">Redes de computadores</h3>
+            <p>
+              Planejamento, implementação e gerenciamento de redes de
+              computadores, incluindo a configuração de roteadores, switches e
+              outros equipamentos de rede.
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-lg">
+            <img
+              src="assets/pesquisa-e-desenvolvimento.png"
+              alt="Pesquisa e Desenvolvimento"
+              class="w-12 h-12 mx-auto"
+            />
+            <h3 class="text-xl font-bold mt-2">Pesquisa e Desenvolvimento</h3>
+            <p>
+              Trabalhar em projetos de pesquisa para desenvolver novas
+              tecnologias e melhorar as existentes.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-blue-950">Professores</h3>
+        <div class="carousel relative overflow-hidden">
+          <div
+            class="flex items-baseline justify-between gap-6 overflow-x-hidden snap-x snap-mandatory"
+          >
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/felipe.png"
+                alt="Filipe Panta"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">
+                Filipe Panta
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/samia.png"
+                alt="Sâmia Kist"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">Sâmia Kist</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/candice.png"
+                alt="Candisse Schirmer"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">
+                Candisse Schirmer
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/carla.png"
+                alt="Carla Moraes"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">
+                Carla Moraes
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/james.png"
+                alt="James Carvalho"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">
+                James Carvalho
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/luis.png"
+                alt="Luiz Henrique Rauber"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">
+                Luiz Henrique Rauber
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/samantha.png"
+                alt="Samanta Marques"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">
+                Samanta Marques
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/lucas.png"
+                alt="Lucas Reis"
+                width="28"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">Lucas Reis</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="assets/professores/carol.png"
+                alt="Caroline Conrado"
+                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
+              />
+              <p class="text-center font-semibold text-blue-950">
+                Caroline Conrado
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="parcerias" class="container mx-auto">
+        <h2 class="text-3xl font-bold text-blue-950">Parcerias</h2>
+
+        <div class="flex">
+          <div
+            class="grid grid-cols-1 place-items-center md:flex flex-wrap items-center justify-around w-full gap-10"
+          >
+            <img src="assets/imply.webp" />
+            <img src="assets/ZenWall-Logo1.png" width="150" />
+            <img src="assets/sellflux.png" />
+          </div>
+          <img src="assets/menina-livros.png" width="300" />
+        </div>
+      </section>
+
+      <section id="contato" class="bg-slate-50 text-gray-700 py-5">
+        <div class="container mx-auto grid gap-4">
+          <h2 class="text-3xl font-bold text-blue-950">Contato</h2>
+          <div class="flex flex-wrap flex-1 justify-between gap-4">
+            <span class="flex-1">
+              <p class="font-bold text-blue-950">Telefone</p>
+              <a href="tel:+5551999999999" class="hover:underline"
+                >(51) 99999-9999</a
+              >
+            </span>
+            <span class="flex-1">
+              <p class="font-bold text-blue-950">E-mail</p>
+              <a href="mailto:dom@domalberto.edu.br" class="hover:underline"
+                >dom@domalberto.edu.br</a
+              >
+            </span>
+          </div>
+          <h3 class="text-2xl font-bold text-blue-950">Endereço</h3>
+          <p class="mb-4">
+            Rua Ramiro Barcelos, nº 892 Centro, Santa Cruz do Sul - RS
+          </p>
+          <div class="w-full h-64 mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1234567890123!2d-52.4234567890123!3d-29.717123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951b123456789012%3A0x1234567890123456!2sRua%20Ramiro%20Barcelos%2C%20892%20-%20Centro%2C%20Santa%20Cruz%20do%20Sul%20-%20RS%2C%2096800-000!5e0!3m2!1spt-BR!2sbr!4v1697041234567!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-blue-950 text-white p-4 text-center">
+        <p>&copy; 2021 Dom Alberto - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
