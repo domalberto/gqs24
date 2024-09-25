@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/logo.png" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>Dom Alberto</title>
   </head>
 
@@ -32,6 +32,12 @@
           >Parcerias</a
         >
         <a
+          onclick="handleClick('galeria')"
+          class="hover:underline"
+          href="#galeria"
+          >Fotos</a
+        >
+        <a
           onclick="handleClick('contato')"
           class="hover:underline"
           href="#contato"
@@ -41,9 +47,9 @@
     </header>
 
     <main class="grid gap-6 px-2">
-      <section id="home">
+      <section id="home" class="container mx-auto">
         <div
-          class="relative h-[60vh] bg-[url('assets/banner.jpg')] bg-cover bg-center bg-clip-content rounded-b-lg"
+          class="relative h-[40vh] bg-[url('assets/banner.jpg')] bg-cover bg-center bg-clip-content rounded-b-lg"
         >
           <div
             class="absolute text-right top-0 left-0 w-full h-full bg-gradient-to-r from-black/15 via-black/50 to-blue-950 flex flex-col justify-end items-end rounded-b-lg text-white font-bold p-5"
@@ -78,7 +84,7 @@
             src="assets/estudante.png"
             alt="Engenharia da Computação"
             width="250"
-            class="flex-shrink-0"
+            class="flex-shrink-0 self-end float-right hidden md:block"
           />
         </div>
 
@@ -205,115 +211,99 @@
         </div>
 
         <h3 class="text-2xl font-bold text-blue-950">Professores</h3>
-        <div class="carousel relative overflow-hidden">
-          <div
-            class="flex items-baseline justify-between gap-6 overflow-x-hidden snap-x snap-mandatory"
-          >
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/felipe.png"
-                alt="Filipe Panta"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">
-                Filipe Panta
-              </p>
-            </div>
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/samia.png"
-                alt="Sâmia Kist"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">Sâmia Kist</p>
-            </div>
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/candice.png"
-                alt="Candisse Schirmer"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">
-                Candisse Schirmer
-              </p>
-            </div>
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/carla.png"
-                alt="Carla Moraes"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">
-                Carla Moraes
-              </p>
-            </div>
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/james.png"
-                alt="James Carvalho"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">
-                James Carvalho
-              </p>
-            </div>
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/luis.png"
-                alt="Luiz Henrique Rauber"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">
-                Luiz Henrique Rauber
-              </p>
-            </div>
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/samantha.png"
-                alt="Samanta Marques"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">
-                Samanta Marques
-              </p>
-            </div>
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/lucas.png"
-                alt="Lucas Reis"
-                width="28"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">Lucas Reis</p>
-            </div>
-            <div
-              class="flex flex-col items-center justify-center flex-shrink-0"
-            >
-              <img
-                src="assets/professores/carol.png"
-                alt="Caroline Conrado"
-                class="w-28 h-28 rounded-full bg-neutral-100 object-fill border"
-              />
-              <p class="text-center font-semibold text-blue-950">
-                Caroline Conrado
-              </p>
-            </div>
+        <h4 class="text-lg text-gray-700">
+          Conheça os professores que fazem parte do corpo docente do curso de
+          Engenharia da Computação
+        </h4>
+
+        <div
+          class="flex flex-wrap items-baseline justify-evenly gap-6 overflow-x-hidden snap-x snap-mandatory p-1"
+        >
+          <div class="flex flex-col items-center justify-center flex-shrink-0">
+            <img
+              src="assets/professores/felipe.png"
+              alt="Filipe Panta"
+              class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
+            />
+            <p class="text-center font-semibold text-blue-950">Filipe Panta</p>
+            <p class="text-neutral-600">Professor</p>
+          </div>
+          <div class="flex flex-col items-center justify-center flex-shrink-0">
+            <img
+              src="assets/professores/candice.png"
+              alt="Candisse Schirmer"
+              class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
+            />
+            <p class="text-center font-semibold text-blue-950">
+              Candisse Schirmer
+            </p>
+            <p class="text-neutral-600">Professora</p>
+          </div>
+          <div class="flex flex-col items-center justify-center flex-shrink-0">
+            <img
+              src="assets/professores/carla.png"
+              alt="Carla Moraes"
+              class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
+            />
+            <p class="text-center font-semibold text-blue-950">Carla Moraes</p>
+            <p class="text-neutral-600">Professora</p>
+          </div>
+          <div class="flex flex-col items-center justify-center flex-shrink-0">
+            <img
+              src="assets/professores/carol.png"
+              alt="Caroline Conrado"
+              class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
+            />
+            <p class="text-center font-semibold text-blue-950">
+              Caroline Conrado
+            </p>
+            <p class="text-neutral-600 w-28 text-center">
+              Coordenadora pedagógica
+            </p>
+          </div>
+          <div class="flex flex-col items-center justify-center flex-shrink-0">
+            <img
+              src="assets/professores/james.png"
+              alt="James Carvalho"
+              class="w-28 h-28 rounded-full bg-blue-950 shadow-xl object-fill border hover:scale-105 transform transition-transform duration-300"
+            />
+            <p class="text-center font-semibold text-blue-950">
+              James Carvalho
+            </p>
+            <p class="text-neutral-600">Professor</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center flex-shrink-0">
+            <img
+              src="assets/professores/luis.png"
+              alt="Luiz Henrique Rauber"
+              class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
+            />
+            <p class="text-center font-semibold text-blue-950">
+              Luiz Henrique Rauber
+            </p>
+            <p class="text-neutral-600">Professor</p>
+          </div>
+          <div class="flex flex-col items-center justify-center flex-shrink-0">
+            <img
+              src="assets/professores/samantha.png"
+              alt="Samanta Marques"
+              class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
+            />
+            <p class="text-center font-semibold text-blue-950">
+              Samanta Marques
+            </p>
+            <p class="text-neutral-600">Professora</p>
+          </div>
+          <div class="flex flex-col items-center justify-center flex-shrink-0">
+            <img
+              src="assets/professores/lucas.png"
+              alt="Lucas Reis"
+              width="28"
+              class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
+            />
+            <p class="text-center font-semibold text-blue-950">Lucas Reis</p>
+            <p class="text-neutral-600">Professor</p>
           </div>
         </div>
       </section>
@@ -321,15 +311,52 @@
       <section id="parcerias" class="container mx-auto">
         <h2 class="text-3xl font-bold text-blue-950">Parcerias</h2>
 
-        <div class="flex">
+        <div
+          class="grid grid-cols-1 place-items-center md:flex flex-wrap items-center justify-around w-full gap-10"
+        >
+          <img src="assets/imply.webp" />
+          <img src="assets/ZenWall-Logo1.png" width="150" />
+          <img src="assets/sellflux.png" />
+        </div>
+      </section>
+
+      <section id="galeria" class="container mx-auto">
+        <h2 class="text-3xl font-bold text-blue-950">Galeria de fotos</h2>
+        <div class="container mx-auto px-4 py-8">
           <div
-            class="grid grid-cols-1 place-items-center md:flex flex-wrap items-center justify-around w-full gap-10"
-          >
-            <img src="assets/imply.webp" />
-            <img src="assets/ZenWall-Logo1.png" width="150" />
-            <img src="assets/sellflux.png" />
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+            id="gallery"
+          ></div>
+        </div>
+
+        <div
+          id="modal"
+          class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[100]"
+        >
+          <div class="relative">
+            <img
+              id="modal-image"
+              class="max-w-full max-h-[80vh] rounded-lg shadow-lg"
+            />
+            <button
+              id="close-modal"
+              class="absolute top-2 right-2 text-white text-xl font-bold"
+            >
+              ✕
+            </button>
           </div>
-          <img src="assets/menina-livros.png" width="300" />
+          <button
+            id="prev"
+            class="absolute top-1/2 left-2 text-white text-2xl font-bold hover:bg-neutral-50/50 rounded-full w-8 h-8"
+          >
+            &lt;
+          </button>
+          <button
+            id="next"
+            class="absolute top-1/2 right-2 text-white text-2xl font-bold hover:bg-neutral-50/50 rounded-full w-8 h-8"
+          >
+            &gt;
+          </button>
         </div>
       </section>
 
