@@ -12,50 +12,73 @@
   <body class="p-0 h-full font-sans">
     <header
       class="flex flex-wrap justify-between items-center px-5 py-1 shadow-lg bg-white sticky top-0 z-50"
+      role="banner"
     >
       <img
         src="assets/logo.png"
-        alt="Logo Dom Alberto"
+        alt="Logo da Faculdade Dom Alberto"
         class="logo w-20 md:w-28"
+        aria-label="Logo da Faculdade Dom Alberto"
       />
-      <nav class="text-blue-950 gap-4 flex font-semibold">
-        <a onclick="handleClick('home')" class="hover:underline" href="#home"
+      <nav
+        class="text-blue-950 gap-4 flex font-semibold"
+        aria-label="Navegação principal"
+      >
+        <a
+          onclick="handleClick('home')"
+          class="hover:underline"
+          href="#home"
+          aria-label="Ir para a seção Início"
+          tabindex="0"
           >Início</a
         >
-        <a onclick="handleClick('sobre')" class="hover:underline" href="#sobre"
+        <a
+          onclick="handleClick('sobre')"
+          class="hover:underline"
+          href="#sobre"
+          aria-label="Ir para a seção Sobre"
+          tabindex="0"
           >Sobre</a
         >
         <a
           onclick="handleClick('professores')"
           class="hover:underline"
           href="#professores"
+          aria-label="Ir para a seção Professores"
+          tabindex="0"
           >Professores</a
         >
         <a
           onclick="handleClick('parcerias')"
           class="hover:underline"
           href="#parcerias"
+          aria-label="Ir para a seção Empresas parceiras"
+          tabindex="0"
           >Empresas parceiras</a
         >
         <a
           onclick="handleClick('galeria')"
           class="hover:underline"
           href="#galeria"
+          aria-label="Ir para a seção Fotos"
+          tabindex="0"
           >Fotos</a
         >
         <a
           onclick="handleClick('contato')"
           class="hover:underline"
           href="#contato"
+          aria-label="Ir para a seção Contato"
+          tabindex="0"
           >Contato</a
         >
       </nav>
     </header>
 
     <main class="grid gap-10 px-2">
-      <section id="home" class="container mx-auto">
+      <section id="home" class="">
         <div
-          class="relative h-[40vh] bg-[url('assets/banner.jpg')] bg-cover bg-center bg-clip-content rounded-b-lg"
+          class="relative h-[80vh] bg-[url('assets/computacao.jpg')] bg-cover bg-center bg-clip-content rounded-b-lg"
         >
           <div
             class="absolute text-right top-0 left-0 w-full h-full bg-gradient-to-r from-black/15 via-black/50 to-blue-950 flex flex-col justify-end items-end rounded-b-lg text-white font-bold p-5"
@@ -67,160 +90,200 @@
         </div>
       </section>
 
-      <section id="sobre" class="container mx-auto grid gap-5">
+      <section
+        id="sobre"
+        class="container mx-auto grid gap-5"
+        role="region"
+        aria-labelledby="sobre-title"
+      >
         <div class="flex items-center gap-4">
           <div class="flex flex-col gap-2">
-            <h2 class="text-3xl font-bold text-blue-950">Sobre o curso</h2>
+            <h2 id="sobre-title" class="text-3xl font-bold text-blue-950">
+              Sobre o curso
+            </h2>
             <p class="text-lg text-gray-700 leading-relaxed flex-1">
-              O curso de Engenharia da Computação prepara o estudante para
-              desenvolver sistemas computacionais, abrangendo hardware e
-              software. Durante a graduação, são abordados temas como
-              programação, algoritmos, redes, sistemas operacionais e
-              inteligência artificial. O aluno também participa de projetos
-              práticos que integram a teoria à solução de problemas reais. Ao
-              final, o engenheiro estará apto a atuar em áreas como
-              desenvolvimento de software, engenharia de sistemas, segurança da
-              informação, automação e robótica.
+              O curso de Engenharia da Computação prepara o estudante para criar
+              e gerenciar sistemas computacionais, cobrindo tanto hardware
+              quanto software. Durante a graduação, os alunos exploram tópicos
+              essenciais como programação, algoritmos, redes, sistemas
+              operacionais e inteligência artificial. Além disso, participam de
+              projetos práticos que conectam a teoria à resolução de problemas
+              reais. Ao concluir o curso, o engenheiro estará capacitado para
+              atuar em diversas áreas, incluindo desenvolvimento de software,
+              engenharia de sistemas, segurança da informação, automação e
+              robótica. A seguir, você encontrará algumas das principais áreas
+              de atuação que um engenheiro da computação pode explorar.
             </p>
           </div>
           <img
             src="assets/estudante.png"
-            alt="Engenharia da Computação"
+            alt="Imagem de um estudante de Engenharia da Computação, ilustrando um cenário acadêmico"
             width="250"
             class="flex-shrink-0 self-end float-right hidden md:block"
+            role="img"
           />
         </div>
       </section>
 
-      <section class="container mx-auto grid gap-5">
-        <h3 class="text-2xl font-bold text-blue-950">Áreas de atuação</h3>
+      <section
+        class="container mx-auto grid gap-5"
+        role="region"
+        aria-labelledby="areas-de-atuacao-heading"
+      >
+        <h2
+          id="areas-de-atuacao-heading"
+          class="text-2xl font-bold text-blue-950"
+          role="heading"
+          aria-level="2"
+        >
+          Áreas de atuação
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="p-4 border rounded-lg">
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/processo-interno.png"
-              alt="Desenvolvimento de Software"
+              alt="Ícone representando Desenvolvimento de Software com um gráfico"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">Desenvolvimento de Software</h3>
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
+              Desenvolvimento de Software
+            </h3>
             <p>
               Criação de aplicativos, sistemas operacionais, jogos e outros
               tipos de software.
             </p>
-          </div>
-          <div class="p-4 border rounded-lg">
+          </article>
+
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/codigo.png"
-              alt="Engenharia de Sistemas"
+              alt="Ícone de código representando Engenharia de Sistemas"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">Engenharia de Sistemas</h3>
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
+              Engenharia de Sistemas
+            </h3>
             <p>
               Projeto, construção e manutenção de sistemas computacionais,
               incluindo hardware, software e redes de computadores.
             </p>
-          </div>
+          </article>
 
-          <div class="p-4 border rounded-lg">
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/seguranca.png"
-              alt="Segurança da Informação"
+              alt="Ícone de escudo representando Segurança da Informação"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">Segurança da Informação</h3>
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
+              Segurança da Informação
+            </h3>
             <p>
               Proteção de sistemas computacionais contra ataques cibernéticos e
               desenvolvimento de soluções de segurança.
             </p>
-          </div>
+          </article>
 
-          <div class="p-4 border rounded-lg">
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/automacao.png"
-              alt="Automação Industrial e Robótica"
+              alt="Ícone de engrenagens representando Automação Industrial e Robótica"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
               Automação Industrial e Robótica
             </h3>
             <p>
               Desenvolvimento de sistemas automatizados e robôs para melhorar a
               eficiência e a precisão em processos industriais.
             </p>
-          </div>
+          </article>
 
-          <div class="p-4 border rounded-lg">
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/servidor.png"
-              alt="Desenvolvimento de Hardware"
+              alt="Ícone de servidor representando Desenvolvimento de Hardware"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">Desenvolvimento de Hardware</h3>
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
+              Desenvolvimento de Hardware
+            </h3>
             <p>
               Projeto e construção de componentes de hardware, como placas de
               circuito, processadores e outros dispositivos eletrônicos.
             </p>
-          </div>
+          </article>
 
-          <div class="p-4 border rounded-lg">
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/inteligencia-artificial.png"
-              alt="Inteligência artificial"
+              alt="Ícone de cérebro representando Inteligência Artificial"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">Inteligência artificial</h3>
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
+              Inteligência Artificial
+            </h3>
             <p>
               Desenvolvimento de sistemas de IA, como chatbots, sistemas de
               recomendação e aprendizado de máquina.
             </p>
-          </div>
+          </article>
 
-          <div class="p-4 border rounded-lg">
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/ciencia-de-dados.png"
-              alt="Ciência de Dados"
+              alt="Ícone de gráfico representando Ciência de Dados"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">Ciência de Dados</h3>
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
+              Ciência de Dados
+            </h3>
             <p>
               Coleta, análise e visualização de dados para ajudar na tomada de
               decisões informadas.
             </p>
-          </div>
+          </article>
 
-          <div class="p-4 border rounded-lg">
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/redes.png"
-              alt="Redes de computadores"
+              alt="Ícone de rede representando Redes de Computadores"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">Redes de computadores</h3>
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
+              Redes de Computadores
+            </h3>
             <p>
               Planejamento, implementação e gerenciamento de redes de
               computadores, incluindo a configuração de roteadores, switches e
               outros equipamentos de rede.
             </p>
-          </div>
+          </article>
 
-          <div class="p-4 border rounded-lg">
+          <article class="p-4 border rounded-lg" role="article">
             <img
               src="assets/pesquisa-e-desenvolvimento.png"
-              alt="Pesquisa e Desenvolvimento"
+              alt="Ícone de lupa representando Pesquisa e Desenvolvimento"
               class="w-12 h-12 mx-auto"
             />
-            <h3 class="text-xl font-bold mt-2">Pesquisa e Desenvolvimento</h3>
+            <h3 class="text-xl font-bold mt-2" role="heading" aria-level="3">
+              Pesquisa e Desenvolvimento
+            </h3>
             <p>
               Trabalhar em projetos de pesquisa para desenvolver novas
               tecnologias e melhorar as existentes.
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
       <div
         class="bg-blue-950 text-white flex flex-col md:flex-row py-2 gap-2 px-4 items-center justify-between text-center rounded-lg container mx-auto"
+        role="banner"
+        aria-labelledby="vestibular-banner"
       >
         <div class="text-left">
-          <h2 class="text-xl md:text-2xl font-bold">
+          <h2 id="vestibular-banner" class="text-xl md:text-2xl font-bold">
             Vestibular de Verão Dom Alberto
           </h2>
           <p class="text-sm md:text-base">
@@ -230,14 +293,23 @@
         <a
           href="https://universa.faculdade.domalberto.edu.br/vestibular/v2/selecao-inscricao/captacao"
           target="_blank"
+          rel="noopener noreferrer"
           class="bg-yellow-500 text-white w-40 truncate font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
+          aria-label="Saiba mais sobre o vestibular de verão Dom Alberto"
         >
           Saiba mais
         </a>
       </div>
 
-      <section id="professores" class="container mx-auto">
-        <h3 class="text-3xl font-bold text-blue-950">Professores</h3>
+      <section
+        id="professores"
+        class="container mx-auto"
+        role="region"
+        aria-labelledby="professores-title"
+      >
+        <h3 id="professores-title" class="text-3xl font-bold text-blue-950">
+          Professores
+        </h3>
         <h4 class="text-lg text-gray-700 mb-5">
           Conheça os professores que fazem parte do corpo docente do curso de
           Engenharia da Computação
@@ -245,91 +317,153 @@
 
         <div
           class="flex flex-wrap items-baseline justify-evenly gap-6 overflow-x-hidden snap-x snap-mandatory p-1"
+          aria-live="polite"
         >
-          <div class="flex flex-col items-center justify-center flex-shrink-0">
+          <div
+            class="flex flex-col items-center justify-center flex-shrink-0"
+            role="listitem"
+            aria-labelledby="professor-filipe"
+          >
             <img
               src="assets/professores/felipe.png"
-              alt="Filipe Panta"
+              alt="Imagem de Filipe Panta"
               class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
             />
-            <p class="text-center font-semibold text-blue-950">Filipe Panta</p>
+            <p
+              id="professor-filipe"
+              class="text-center font-semibold text-blue-950"
+            >
+              Filipe Panta
+            </p>
             <p class="text-neutral-600">Professor</p>
           </div>
-          <div class="flex flex-col items-center justify-center flex-shrink-0">
+          <div
+            class="flex flex-col items-center justify-center flex-shrink-0"
+            role="listitem"
+            aria-labelledby="professor-candice"
+          >
             <img
               src="assets/professores/candice.png"
-              alt="Candisse Schirmer"
+              alt="Imagem de Candisse Schirmer"
               class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
             />
-            <p class="text-center font-semibold text-blue-950">
+            <p
+              id="professor-candice"
+              class="text-center font-semibold text-blue-950"
+            >
               Candisse Schirmer
             </p>
             <p class="text-neutral-600">Professora</p>
           </div>
-          <div class="flex flex-col items-center justify-center flex-shrink-0">
+          <div
+            class="flex flex-col items-center justify-center flex-shrink-0"
+            role="listitem"
+            aria-labelledby="professor-carla"
+          >
             <img
               src="assets/professores/carla.png"
-              alt="Carla Moraes"
+              alt="Imagem de Carla Moraes"
               class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
             />
-            <p class="text-center font-semibold text-blue-950">Carla Moraes</p>
+            <p
+              id="professor-carla"
+              class="text-center font-semibold text-blue-950"
+            >
+              Carla Moraes
+            </p>
             <p class="text-neutral-600">Professora</p>
           </div>
-          <div class="flex flex-col items-center justify-center flex-shrink-0">
+          <div
+            class="flex flex-col items-center justify-center flex-shrink-0"
+            role="listitem"
+            aria-labelledby="professor-carol"
+          >
             <img
               src="assets/professores/carol.png"
-              alt="Caroline Conrado"
+              alt="Imagem de Caroline Conrado"
               class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
             />
-            <p class="text-center font-semibold text-blue-950">
+            <p
+              id="professor-carol"
+              class="text-center font-semibold text-blue-950"
+            >
               Caroline Conrado
             </p>
             <p class="text-neutral-600 w-28 text-center">
               Coordenadora pedagógica
             </p>
           </div>
-          <div class="flex flex-col items-center justify-center flex-shrink-0">
+          <div
+            class="flex flex-col items-center justify-center flex-shrink-0"
+            role="listitem"
+            aria-labelledby="professor-james"
+          >
             <img
               src="assets/professores/james.png"
-              alt="James Carvalho"
+              alt="Imagem de James Carvalho"
               class="w-28 h-28 rounded-full bg-blue-950 shadow-xl object-fill border hover:scale-105 transform transition-transform duration-300"
             />
-            <p class="text-center font-semibold text-blue-950">
+            <p
+              id="professor-james"
+              class="text-center font-semibold text-blue-950"
+            >
               James Carvalho
             </p>
             <p class="text-neutral-600">Professor</p>
           </div>
-
-          <div class="flex flex-col items-center justify-center flex-shrink-0">
+          <div
+            class="flex flex-col items-center justify-center flex-shrink-0"
+            role="listitem"
+            aria-labelledby="professor-luis"
+          >
             <img
               src="assets/professores/luis.png"
-              alt="Luiz Henrique Rauber"
+              alt="Imagem de Luiz Henrique Rauber"
               class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
             />
-            <p class="text-center font-semibold text-blue-950">
+            <p
+              id="professor-luis"
+              class="text-center font-semibold text-blue-950"
+            >
               Luiz Henrique Rauber
             </p>
             <p class="text-neutral-600">Professor</p>
           </div>
-          <div class="flex flex-col items-center justify-center flex-shrink-0">
+          <div
+            class="flex flex-col items-center justify-center flex-shrink-0"
+            role="listitem"
+            aria-labelledby="professor-samantha"
+          >
             <img
               src="assets/professores/samantha.png"
-              alt="Samanta Marques"
+              alt="Imagem de Samanta Marques"
               class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
             />
-            <p class="text-center font-semibold text-blue-950">
+            <p
+              id="professor-samantha"
+              class="text-center font-semibold text-blue-950"
+            >
               Samanta Marques
             </p>
             <p class="text-neutral-600">Professora</p>
           </div>
-          <div class="flex flex-col items-center justify-center flex-shrink-0">
+          <div
+            class="flex flex-col items-center justify-center flex-shrink-0"
+            role="listitem"
+            aria-labelledby="professor-lucas"
+          >
             <img
               src="assets/professores/lucas.png"
-              alt="Lucas Reis"
+              alt="Imagem de Lucas Reis"
               width="28"
               class="w-28 h-28 rounded-full bg-blue-950 object-fill border hover:scale-105 transform transition-transform duration-300"
             />
-            <p class="text-center font-semibold text-blue-950">Lucas Reis</p>
+            <p
+              id="professor-lucas"
+              class="text-center font-semibold text-blue-950"
+            >
+              Lucas Reis
+            </p>
             <p class="text-neutral-600">Professor</p>
           </div>
         </div>
@@ -397,21 +531,31 @@
           <div
             class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
             id="gallery"
+            role="grid"
+            aria-labelledby="galeria-title"
           ></div>
         </div>
 
         <div
           id="modal"
           class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[100]"
+          role="dialog"
+          aria-labelledby="modal-image"
+          aria-modal="true"
+          aria-hidden="true"
         >
           <div class="relative">
             <img
               id="modal-image"
               class="max-w-full max-h-[80vh] rounded-lg shadow-lg"
+              alt="Imagem em tela cheia"
+              role="img"
             />
             <button
               id="close-modal"
               class="absolute top-2 right-2 text-white text-xl font-bold"
+              aria-label="Fechar modal"
+              tabindex="0"
             >
               ✕
             </button>
@@ -419,12 +563,16 @@
           <button
             id="prev"
             class="absolute top-1/2 left-2 text-white text-2xl font-bold hover:bg-neutral-50/50 rounded-full w-8 h-8"
+            aria-label="Imagem anterior"
+            tabindex="0"
           >
             &lt;
           </button>
           <button
             id="next"
             class="absolute top-1/2 right-2 text-white text-2xl font-bold hover:bg-neutral-50/50 rounded-full w-8 h-8"
+            aria-label="Próxima imagem"
+            tabindex="0"
           >
             &gt;
           </button>
@@ -433,15 +581,20 @@
 
       <div
         class="relative rounded-lg bg-blue-950 text-white px-1 flex items-center justify-center text-center overflow-hidden container mx-auto"
+        role="region"
+        aria-labelledby="matricule-se-heading"
       >
         <img
           src="assets/menina-livros.png"
           alt="Estudante segurando livros"
           class="hidden md:block"
           width="300"
+          role="img"
         />
         <div class="flex flex-col items-center justify-center gap-3 p-4">
-          <h1 class="text-3xl font-bold mb-4">Matricule-se Agora!</h1>
+          <h1 id="matricule-se-heading" class="text-3xl font-bold mb-4">
+            Matricule-se Agora!
+          </h1>
           <p class="text-lg">
             Não perca a oportunidade de fazer parte da nossa instituição.
             Garanta sua vaga e comece a sua jornada acadêmica com a gente!
@@ -449,26 +602,42 @@
           <a
             href="https://universa.faculdade.domalberto.edu.br/vestibular/v2/selecao-inscricao/captacao"
             target="_blank"
+            rel="noopener noreferrer"
             class="bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
+            aria-label="Inscreva-se para o vestibular"
+            tabindex="0"
           >
             Inscreva-se
           </a>
         </div>
       </div>
 
-      <section id="contato" class="bg-slate-50 text-gray-700 py-5">
+      <section
+        id="contato"
+        class="bg-slate-50 text-gray-700 py-5"
+        role="region"
+        aria-labelledby="contato-heading"
+      >
         <div class="container mx-auto grid gap-4">
-          <h2 class="text-3xl font-bold text-blue-950">Contato</h2>
+          <h2 id="contato-heading" class="text-3xl font-bold text-blue-950">
+            Contato
+          </h2>
           <div class="flex flex-wrap flex-1 justify-between gap-4">
             <span class="flex-1">
               <p class="font-bold text-blue-950">Telefone</p>
-              <a href="tel:+5551999999999" class="hover:underline"
+              <a
+                href="tel:+5551999999999"
+                class="hover:underline"
+                aria-label="Ligar para (51) 99999-9999"
                 >(51) 99999-9999</a
               >
             </span>
             <span class="flex-1">
               <p class="font-bold text-blue-950">E-mail</p>
-              <a href="mailto:dom@domalberto.edu.br" class="hover:underline"
+              <a
+                href="mailto:dom@domalberto.edu.br"
+                class="hover:underline"
+                aria-label="Enviar e-mail para dom@domalberto.edu.br"
                 >dom@domalberto.edu.br</a
               >
             </span>
@@ -485,6 +654,8 @@
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
+              title="Localização do endereço em um mapa do Google"
+              aria-label="Mapa mostrando a localização do endereço Rua Ramiro Barcelos, nº 892, Centro, Santa Cruz do Sul - RS"
             ></iframe>
           </div>
         </div>

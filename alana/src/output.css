@@ -710,6 +710,10 @@ video {
   height: 40vh;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .h-full {
   height: 100%;
 }
@@ -952,8 +956,8 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'assets\/banner\.jpg\'\)\] {
-  background-image: url('assets/banner.jpg');
+.bg-\[url\(\'assets\/computacao\.jpg\'\)\] {
+  background-image: url('assets/computacao.jpg');
 }
 
 .bg-gradient-to-r {
