@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: linear-gradient(#79a0ce, #ffffff);
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -151,3 +151,26 @@ button:focus {
     outline: none;
 }
 
+
+
+.periodo-content {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.periodo-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.periodo-button:focus {
+    outline: 2px solid #007bff;
+}
+.periodo-button:hover {
+    background-color: #e0e0e0;
+}
