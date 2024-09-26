@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Engenharia da Computação</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="icon" href="Midias/imagens/icone.png" type="image/png">
 </head>
 <body>
+   
+    <nav class="custom-navbar">
+        <ul>
+            <img src="Midias/imagens/icone.png" alt="Ícone Dom Alberto" style="width: 120px; height: 120px; vertical-align: middle; margin-right: 10px;">
+            <li><a href="https://domalberto.edu.br/">Home</a></li>
+            <li><a href="https://domalberto.edu.br/vestibular/">Vestibular</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="https://quickenglish.com.br/">Idiomas</a></li>
+            <li><a href="https://domalberto.edu.br/polos/">Polos</a></li>
+            <li><a href="#">Institucional</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisar...">
+            <select>
+                <option value="tipo1">Tipo de Curso</option>
+                <option value="tipo2">Graduação</option>
+                <option value="tipo3">Pós-graduação</option>
+            </select>
+            <button>🔍</button>
+        </div>
+    </nav>
     <header role="banner">
+        
         <h1>Engenharia da Computação</h1>
         <nav role="navigation">
+            <p>Tabela de conteúdos</p>
             <ul>
                 <li><a href="#sobre" tabindex="0">Sobre o Curso</a></li>
                 <li><a href="#beneficios" tabindex="0">Benefícios</a></li>
@@ -31,38 +57,53 @@
 
         <section id="beneficios" class="section">
             <h2>Benefícios do Curso</h2>
-            <div class="carousel">
-                <button class="prev" aria-label="Anterior">‹</button>
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                        <img src="Midias/imagens/Laboratorio_informática.jpg" style="width:400px;height: 300px;" alt="Laboratório de computação moderno">
-                        <p>Laboratórios modernos e bem equipados para práticas avançadas.</p>
-                    </div>
-                    <div class="carousel-slide" style="display: flex; flex-direction: column; align-items: center;">
-                        <section style="display: flex;">
-                            <section style="margin-right: 20px;">
-                                <img src="Midias/imagens/luiz.png" style="width:250px;height: 200px;" alt="Professor experiente ensinando em palestra">
-                                <br>
-                                <a href="http://lattes.cnpq.br/5121001048317706">Luiz Rauber</a>
-                            </section>
-                            <section>
-                                <img src="Midias/imagens/Filipe.png" style="width:250px;height: 200px;" alt="Professor experiente ensinando a 10 anos atrás">
-                                <br>
-                                <a href="http://lattes.cnpq.br/6761800842607421">Filipe Flores</a>
-                            </section>
-                        </section>
-                        <p style="margin-top: 20px; text-align: center;">Professores com ampla experiência no mercado de trabalho.</p>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="Midias/imagens/Projetos_tecnicos.jpeg" style="width:200px;height: 400px;" alt="Estudantes desenvolvendo projetos práticos">
-                        <p>Projetos práticos e integradores com empresas reais.</p>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="Midias/imagens/Reconhecido_pelo_mec.jpeg" style="width:400px;height: 300px;" alt="Certificado reconhecido">
-                        <p>Certificação reconhecida nacionalmente. <a href="https://www.youtube.com/watch?v=oF_95V22c6U">Confira o vídeo</a></p>
-                    </div>
-                </div>
-                <button class="next" aria-label="Próximo">›</button>
+            <div class="slideshow-container">
+        
+<!-- Slide 1 -->
+<div class="mySlides fade">
+    <img src="Midias/imagens/Laboratorio_informática.jpg"style="width:100%;height: auto;"  alt="Laboratório de Computação moderno">
+    <div class="text">Laboratórios modernos e bem equipados para práticas avançadas.</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="mySlides fade">
+    <div  style="display: flex; justify-content: center; align-items: center;">
+        <section class="professor-card">
+            <img src="Midias/imagens/luiz.png" alt="Professor Luiz Rauber" style="width:100%;height: 100%;">
+            <br>
+            <p><a href="http://lattes.cnpq.br/5121001048317706">Luiz Rauber</a></p>
+        </section>
+        <section class="professor-card">
+            <img src="Midias/imagens/Filipe.png" alt="Professor Filipe Flores" style="width:100%;height: 100%;">
+            <br>
+            <p><a href="http://lattes.cnpq.br/6761800842607421">Filipe Flores</a></p>
+        </section>
+    </div>
+    <div class="text">Professores com ampla experiência no mercado de trabalho.</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="mySlides fade">
+    <img src="Midias/imagens/Projetos_tecnicos.jpeg" alt="Estudantes desenvolvendo projetos práticos">
+    <div class="text">Projetos práticos e integradores com empresas reais.</div>
+</div>
+
+<div class="mySlides fade">
+    <img src="Midias/imagens/Reconhecido_pelo_mec.jpeg" style="width:100%;height: auto;" alt="Certificado reconhecido">
+    <div class="text">Certificação reconhecida nacionalmente. <a href="https://www.youtube.com/watch?v=oF_95V22c6U" target="_blank">Confira o vídeo</a></div>
+</div>
+        
+                <!-- Controles de navegação -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        
+            <!-- Pontos indicativos -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </section>
         <section id="curriculo" class="section">
@@ -226,7 +267,7 @@
         <p>© 2024 Faculdade Dom Alberto. Todos os direitos reservados.</p>
     </footer>
 
-    <script type="text/javascript" src="script/app.js">
+    <script type="text/javascript" src="Script/app.js">
 
     </script>
 </body>

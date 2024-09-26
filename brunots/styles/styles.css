@@ -1,3 +1,35 @@
+
+@media (max-width: 768px) {
+    .custom-navbar ul,
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .custom-navbar ul img {
+        margin-bottom: 10px;
+    }
+    .custom-navbar,
+    header,
+    main,
+    footer {
+        padding: 10px;
+    }
+    .section {
+        padding: 20px;
+    }
+}
+
+
+
+
+a:focus, button:focus {
+    outline: 3px solid #007BFF;
+    outline-offset: 2px;
+}
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +39,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #004895;
     color: white;
     padding: 20px;
     text-align: center;
@@ -32,13 +64,60 @@ nav ul li a {
     text-decoration: none;
 }
 
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+}
+.custom-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.custom-navbar ul li {
+    margin-right: 20px;
+}
+.custom-navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.custom-navbar .search-box {
+    display: flex;
+    align-items: center;
+}
+.custom-navbar .search-box input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.custom-navbar .search-box select {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.custom-navbar .search-box button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
 .section {
     padding: 40px 20px;
     text-align: center;
 }
 
 .section h2 {
-    color: #007bff;
+    color: #004895;
 }
 
 ul {
@@ -75,7 +154,7 @@ form input[type="tel"] {
 
 form input[type="submit"] {
     margin-top: 15px;
-    background-color: #007bff;
+    background-color: #004895;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -91,43 +170,96 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Estilos para o Slideshow */
+.slideshow-container {
     position: relative;
-}
-
-.carousel-container {
-    display: flex;
+    max-width: 1000px;
+    margin: auto;
     overflow: hidden;
-    width: 80%;
+}
+.slideshow-container img {
+    
+    height:500px;
+    width: auto;
 }
 
-.carousel-slide {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-    text-align: center;
+
+
+.mySlides {
+    display: none;
 }
 
-.carousel-slide img {
+img {
+    vertical-align: middle;
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
-.carousel p {
-    margin-top: 10px;
-    font-size: 18px;
+/* Texto nas imagens */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Botões anterior/próximo */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Estilo ao passar o mouse nos botões */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Pontos indicativos */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
 }
 
 button.prev, button.next {
-    background-color: #007bff;
+    background-color: #004895;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -173,4 +305,30 @@ button:focus {
 }
 .periodo-button:hover {
     background-color: #e0e0e0;
+}
+
+
+
+/* Estilo para o slide com professores */
+.professor-card {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.professor-card img {
+    border-radius: 20%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.professor-card a {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.professor-card img:hover {
+    transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
 }
