@@ -1,0 +1,122 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background: #eee;
+}
+
+.nav-item{
+    font-size: 1.1em;
+    margin: 0 5px 0 5px;
+    
+}
+
+.landing {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 200px 20px 200px 20px;
+    background-color: #2098d1;
+    color: white;
+    text-align: center;
+}
+
+#btn-getConnected{
+    border-radius: 0%;
+}
+
+#h1-welcome{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#p-welcome{
+    margin-bottom: 80px;
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+}
+
+.navbar-brand i{
+    font-size: 1.8em;
+}
+
+.navbar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+#connect-title{
+    margin: 50px 0 20px 0;
+}
+
+#social i{
+    margin: 30px 25px 100px 25px;
+    font-size: 3.8em;
+    color: rgb(182, 182, 182);
+}
+
+#facebook:hover{
+    color: RGB(52,81,162);
+    transition-duration: 500ms;
+}
+
+#twitter:hover{
+    color: RGB(48,142,239);
+    transition-duration: 500ms;
+}
+#github:hover{
+    color: RGB(27,30,34);
+    transition-duration: 500ms;
+}
+#medium:hover{
+    color: RGB(0,0,0);
+    transition-duration: 500ms;
+}
+#instagram:hover{
+    color: RGB(164,35,103);
+    transition-duration: 500ms;
+}
+#youtube:hover{
+    color: RGB(255,39,39);
+    transition-duration: 400ms;
+}
+
+.techImages{
+    max-height: 350px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.techImagesDiv{
+    margin: 0;
+    padding: 0;
+}
+
+.html5{
+    background: rgb(247,120,40);
+}
+
+.css3{
+    background: #2098d1;
+}
+
+.js{
+    background: rgb(249,225,34);
+}
+
+.react{
+    background: rgb(29, 29, 29);
+}
+
+.bootstrap{
+    background: rgb(138, 73, 179);
+}
+
+.nodeJS{
+    background: rgb(72, 206, 150);
+}
+
+.title{
+    margin: 70px 0 25px 0;
+}
+

@@ -6,10 +6,133 @@
     <title>Curso de Engenharia da Computação</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="midias/logo-dom.png" type="image/png">
+    meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css">
 </head>
-<body>s
-    
 
-    <script type="text/javascript" src="script.js"></script>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top" id="nav navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="midias/logo-dom.png" style="width: 120px; height: 120px; vertical-align: middle; margin-right: 10px;"></img> <span id="text-brand">Engenharia da Computação</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navToggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#connect">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Home Section-->
+    <div id="home">
+        <div class="landing text-center">
+            <h1 id="h1-welcome">Engenharia da Computação</h1>
+            <p id="p-welcome">Faculdade Dom Alberto</p>
+            <a href="#connect" class="btn btn-outline-light btn-lg" id="btn-getConnected">Conhecer</a>
+        </div>
+    </div>
+
+
+    <!--Tech Section-->
+    <div id="tech" class="container-fluid text-center">
+        <div class="col12">
+            <h2 class="title">Technologies</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 techImagesDiv html5">
+                <a href="#"><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML-5"
+                        class="techImages"></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 techImagesDiv css3">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS-3"
+                        class="techImages"></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 techImagesDiv js">
+                <a href="#"><img src="https://marinalimeira.github.io/talk-graphql-apollo/images/js-logo.png" alt="Javascript" class="techImages"></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 techImagesDiv react">
+                <a href="#" target="_blank"><img
+                        src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React"
+                        class="techImages"></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 techImagesDiv bootstrap">
+                <a href="#"><img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png"
+                        alt="Bootstrap" class="techImages"></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 techImagesDiv nodeJS">
+                <a href="http://" target="_blank"><img
+                        src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" alt="NodeJS"
+                        class="techImages"></a>
+            </div>
+
+        </div>
+    </div>
+    <!--Resume Section-->
+    <div id="resume"></div>
+    <div class="container-fluid">
+        <div id="connect" class="row text-center">
+            <div class="col-12">
+                <h2 class="title">Connect</h2>
+            </div>
+            <div class="container">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-2" id="social">
+                            <a href="#"><i class="fab fa-facebook" id="facebook"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2" id="social">
+                            <a href="#"><i class="fab fa-twitter" id="twitter"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2" id="social">
+                            <a href="#"><i class="fab fa-github" id="github"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2" id="social">
+                            <a href="#"><i class="fab fa-medium" id="medium"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2" id="social">
+                            <a href="#"><i class="fab fa-instagram" id="instagram"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2" id="social">
+                            <a href="#"><i class="fab fa-youtube" id="youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
