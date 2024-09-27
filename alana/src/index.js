@@ -29,19 +29,40 @@ const images = [
     src: "assets/galeria/visita-imply.jpg",
     alt: "Visita à empresa de tecnologia Imply",
   },
-  { src: "assets/galeria/robotica.jpg", alt: "Aula de robótica" },
-  { src: "assets/galeria/aula-pratica.jpg", alt: "Aula prática" },
-  { src: "assets/galeria/aula-pratica-2.jpg", alt: "Aula prática" },
-  { src: "assets/galeria/aula-pratica-3.jpg", alt: "Aula prática" },
-  { src: "assets/galeria/aula-pratica-4.jpg", alt: "Aula prática" },
-  { src: "assets/galeria/aula-pratica-5.jpg", alt: "Aula prática" },
+  {
+    src: "assets/galeria/robotica.jpg",
+    alt: "3 alunos e 1 professora em uma aula de robôtica",
+  },
+  {
+    src: "assets/galeria/aula-pratica.jpg",
+    alt: "5 alunos em uma aula prática de redes",
+  },
+  {
+    src: "assets/galeria/aula-pratica-2.jpg",
+    alt: "Aluno realizando uma manutenção em um computador",
+  },
+  {
+    src: "assets/galeria/aula-pratica-3.jpg",
+    alt: "3 alunos em uma aula prática",
+  },
+  {
+    src: "assets/galeria/aula-pratica-4.jpg",
+    alt: "Alunos realizando uma manutenção em um computador",
+  },
+  {
+    src: "assets/galeria/aula-pratica-5.jpg",
+    alt: "Aluna realizando uma manutenção em um computador",
+  },
   {
     src: "assets/galeria/sala-de-aula-1.jpg",
-    alt: "Laboratório de informática",
+    alt: "Alunos em uma sala de aula",
   },
-  { src: "assets/galeria/sala-de-aula-3.jpg", alt: "Sala de aula" },
-  { src: "assets/galeria/e-get.jpg", alt: "Palestra CEO E-get" },
-  { src: "assets/galeria/palestras.jpg", alt: "Visita à empresa Imprensa" },
+  {
+    src: "assets/galeria/sala-de-aula-3.jpg",
+    alt: "Alunos participam de uma conversa com profissionais da área",
+  },
+  { src: "assets/galeria/e-get.jpg", alt: "Palestra com o CEO da E-get" },
+  { src: "assets/galeria/palestras.jpg", alt: "Alunos e profissionais da área durante semana acadêmica" },
 ];
 
 const gallery = document.getElementById("gallery");
