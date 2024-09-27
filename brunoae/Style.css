@@ -4,33 +4,10 @@ body{
     background: #eee;
 }
 
+
 .nav-item{
     font-size: 1.1em;
     margin: 0 5px 0 5px;
-    
-}
-
-.landing {
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 200px 20px 200px 20px;
-    background-color: #2098d1;
-    color: white;
-    text-align: center;
-}
-
-#btn-getConnected{
-    border-radius: 0%;
-}
-
-#h1-welcome{
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-#p-welcome{
-    margin-bottom: 80px;
 }
 
 .navbar-brand{
@@ -44,6 +21,38 @@ body{
 .navbar{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
 }
+
+
+.landing {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 200px 20px 200px 20px;
+    background-image: linear-gradient(to right, #0e3b50 0%, #0e3b50 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), linear-gradient(to left, #0e3b50 0%, #0e3b50 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), url('midias/fundo3.jpg');
+    background-size: cover;
+    background-position: center; /* centraliza a imagem */ /* opcional, para definir a altura da div */
+    border: 10px solid #000;
+    text-align: center;
+}
+
+#btn-getConnected{
+    border-radius: 0%;
+}
+
+#h1-welcome{
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+}
+
+#p-welcome{
+    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+}
+
+
 
 #connect-title{
     margin: 50px 0 20px 0;
