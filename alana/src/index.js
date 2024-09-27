@@ -61,34 +61,72 @@ images.forEach((image) => {
   img.addEventListener("click", () => {
     modalImage.src = image.src;
     modal.classList.remove("hidden");
+    addKeydownActionToModal();
   });
 
   gallery.appendChild(img);
 });
 
-closeModal.addEventListener("click", () => {
+function removeListenerAndCloseModal() {
   modal.classList.add("hidden");
+  window.removeEventListener("keydown", keydownListener);
+}
+
+closeModal.addEventListener("click", () => {
+  removeListenerAndCloseModal();
 });
 
 modal.addEventListener("click", (event) => {
   if (event.target === modal) {
-    modal.classList.add("hidden");
+    removeListenerAndCloseModal();
   }
 });
 
-next.addEventListener("click", () => {
+const keydownListener = (event) => {
+  if (event.key === "ArrowRight") {
+    showNextImage();
+  } else if (event.key === "ArrowLeft") {
+    showPreviousImage();
+  } else if (event.key === "Escape") {
+    removeListenerAndCloseModal();
+  }
+};
+
+function addKeydownActionToModal() {
+  window.addEventListener("keydown", keydownListener);
+}
+
+closeModal.addEventListener("click", () => {
+  removeListenerAndCloseModal();
+});
+
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    removeListenerAndCloseModal();
+  }
+});
+
+function showNextImage() {
   const currentImageIndex = images.findIndex(
     (image) => image.src === getPathAfterAssets(modalImage.src)
   );
   const nextImageIndex = (currentImageIndex + 1) % images.length;
   modalImage.src = images[nextImageIndex].src;
-});
+}
 
-prev.addEventListener("click", () => {
+function showPreviousImage() {
   const currentImageIndex = images.findIndex(
     (image) => image.src === getPathAfterAssets(modalImage.src)
   );
   const prevImageIndex =
     (currentImageIndex - 1 + images.length) % images.length;
   modalImage.src = images[prevImageIndex].src;
+}
+
+next.addEventListener("click", () => {
+  showNextImage();
+});
+
+prev.addEventListener("click", () => {
+  showPreviousImage();
 });
