@@ -1,3 +1,4 @@
+
 @media (max-width: 768px) {
     .custom-navbar ul,
     .search-box {
@@ -176,7 +177,8 @@ footer {
 /* Estilos para o Slideshow */
 .slideshow-container {
     position: relative;
-    max-width: 1000px;
+    /* max-width: 1000px; */
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -207,7 +209,7 @@ img {
     bottom: 8px;
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: hwb(0 0% 100% / 0.8);
 }
 
 /* Botões anterior/próximo */
@@ -218,12 +220,12 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: rgba(15, 0, 60, 0.759);
     font-weight: bold;
     font-size: 28px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    user-select: none;
+    
 }
 
 .next {
@@ -238,7 +240,7 @@ img {
 
 /* Estilo ao passar o mouse nos botões */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(10,10,50,0.8);
 }
 
 /* Pontos indicativos */
@@ -293,7 +295,7 @@ button:focus {
     display: block;
     width: 100%;
     text-align: left;
-    background-color: #f0f0f0;
+    background-color: #f1a916;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -318,12 +320,17 @@ button:focus {
     border-radius: 20%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    width:100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .professor-card a {
     display: block;
-    margin-top: 10px;
-    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 55px;
+    color: #0000a1;
     font-size: 16px;
     text-decoration: none;
 }
