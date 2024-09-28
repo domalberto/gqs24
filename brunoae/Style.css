@@ -7,7 +7,7 @@ body{
 
 #aumentar-fonte, #diminuir-fonte {
   color: #000; /* cor do texto */
-  background-color: #007bff; /* cor de fundo */
+  background-color: #0056b3; /* cor de fundo */
   border: none; /* sem borda */
   padding: 5px 10px; /* espaçamento interno */
   font-size: 16px; /* tamanho da fonte */
@@ -18,7 +18,7 @@ body{
 }
 
 #aumentar-fonte:hover, #diminuir-fonte:hover {
-  background-color: #0056b3; /* cor de fundo ao passar o mouse */
+  background-color: #0968cd; /* cor de fundo ao passar o mouse */
 }
 
 .nav-item{
