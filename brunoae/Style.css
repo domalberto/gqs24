@@ -5,19 +5,19 @@ body{
     font-size: 16px;
 }
 
-#aumentar-fonte, #diminuir-fonte {
+#aumentar-fonte, #diminuir-fonte, #opc {
     color: #000; /* cor do texto */
     background-color: #007bff; /* cor de fundo */
     border: none; /* sem borda */
     padding: 5px 10px; /* espaçamento interno */
-    font-size: 16px; /* tamanho da fonte */
+    font-size: 18px; /* tamanho da fonte */
     cursor: pointer; /* cursor de ponteiro */
     position: relative; /* posição relativa */
     top: 10px; /* distância do topo */
     left: 20px; /* distância da esquerda */
   }
   
-  #aumentar-fonte:hover, #diminuir-fonte:hover {
+  #aumentar-fonte:hover, #diminuir-fonte:hover, #opc:hover {
     background-color: #0056b3; /* cor de fundo ao passar o mouse */
   }
 
@@ -54,26 +54,30 @@ body{
 
 #btn-getConnected{
     border-radius: 0%;
+    font-weight: bold;
 }
 
 #btn-getConnected:hover {
     transform: scale(1.2);
     background-color: #007bff;
     color: #ffffff;
+    font-weight: bold;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   }
 
 #h1-welcome{
     text-transform: uppercase;
     font-weight: 400;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.66);
     color: #000;
+    font-weight: bold;
 }
 
 #p-welcome{
     margin-bottom: 100px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.66);
     color: #000;
+    font-weight: bold;
 }
 
 #connect-title{
