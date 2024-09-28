@@ -11,7 +11,7 @@
 header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 99%;
     background-color: #007bff;
     z-index: 1000;
     text-align: center;
@@ -30,6 +30,12 @@ header h4 {
     padding: 10px;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 10;
+    background-color: #f2f2f2;
+}
 main {
     margin-top: 240px;
     text-align: center;
@@ -66,7 +72,11 @@ main {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza o conteúdo do rodapé */
+    background-color: #007bff; /* Altera a cor de fundo do rodapé */
+    color: #fff; /* Altera a cor do texto do rodapé para branco */
+    padding: 20px; /* Adiciona padding ao rodapé */
+    border-radius: 10px; /* Adiciona bordas redondas ao rodapé */
 }
 
 #contact-info {
@@ -79,7 +89,18 @@ footer nav {
     margin-top: 0px;
     border-radius: 10px; /* Adiciona bordas redondas à navegação do footer */
 }
+footer img {
+    height: 200px;
+    text-align: left;
+    position: absolute;
+    left: 40px; /* Recuado 40px do canto esquerdo da tela */
+}
 
+footer div section p{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px; /* Adiciona bordas redondas ao div da seção do rodapé */
+}
 h1 {
     font-family: "Genera SemiBold";
     font-size: 2.5em;
@@ -93,12 +114,20 @@ h1 {
 section h2{
     font-family: "Genera SemiBold";
     font-size: 2em;
-    color: #000;
+    color: #000000;
     text-align: center;
     margin: 10;
     padding: 10;
 }
 
+footer section h2{
+    font-family: "Genera SemiBold";
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin: 10;
+    padding: 10;
+}
 section h4{
     font-family: "Genera SemiBold";
     font-size: 1em;

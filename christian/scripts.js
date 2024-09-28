@@ -15,3 +15,7 @@ function toggleGradeCurricular() {
         grade.style.display = 'none';
     }
 }
+
+function openLink(url) {
+    window.open(url, '_blank');
+}
