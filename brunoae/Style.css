@@ -6,7 +6,7 @@ body{
 }
 
 #aumentar-fonte, #diminuir-fonte {
-  color: #000; /* cor do texto */
+  color: #0056b3; /* cor do texto */
   background-color: #0056b3; /* cor de fundo */
   border: none; /* sem borda */
   padding: 5px 10px; /* espaçamento interno */
