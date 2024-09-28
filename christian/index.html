@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Título do Site</h1>
+        <h2>Subtítulo do Site</h2>
+        <nav>
+            <button onclick="handleClick('botao1')">Botão 1</button>
+            <button onclick="handleClick('botao2')">Botão 2</button>
+            <button onclick="handleClick('botao3')">Botão 3</button>
+            <button onclick="handleClick('botao4')">Botão 4</button>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo ao nosso site! Aqui você encontrará informações sobre nossa empresa e nossos serviços.</p>
+        </section>
+        <section id="services">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Serviço 1</li>
+                <li>Serviço 2</li>
+                <li>Serviço 3</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <section id="gallery">
+        <h2>Galeria de Imagens</h2>
+        <figure>
+            <img src="image1.jpg" alt="Descrição da imagem 1">
+            <figcaption>Fonte: Autor da Imagem 1</figcaption>
+        </figure>
+        <figure>
+            <img src="image2.jpg" alt="Descrição da imagem 2">
+            <figcaption>Fonte: Autor da Imagem 2</figcaption>
+        </figure>
+        <figure>
+            <img src="image3.jpg" alt="Descrição da imagem 3">
+            <figcaption>Fonte: Autor da Imagem 3</figcaption>
+        </figure>
+        <figure>
+            <img src="image4.jpg" alt="Descrição da imagem 4">
+            <figcaption>Fonte: Autor da Imagem 4</figcaption>
+        </figure>
+        <figure>
+            <img src="image5.jpg" alt="Descrição da imagem 5">
+            <figcaption>Fonte: Autor da Imagem 5</figcaption>
+        </figure>
+        <figure>
+            <img src="image6.jpg" alt="Descrição da imagem 6">
+            <figcaption>Fonte: Autor da Imagem 6</figcaption>
+        </figure>
+        <figure>
+            <img src="image7.jpg" alt="Descrição da imagem 7">
+            <figcaption>Fonte: Autor da Imagem 7</figcaption>
+        </figure>
+        <figure>
+            <img src="image8.jpg" alt="Descrição da imagem 8">
+            <figcaption>Fonte: Autor da Imagem 8</figcaption>
+        </figure>
+        <figure>
+            <img src="image9.jpg" alt="Descrição da imagem 9">
+            <figcaption>Fonte: Autor da Imagem 9</figcaption>
+        </figure>
+        <figure>
+            <img src="image10.jpg" alt="Descrição da imagem 10">
+            <figcaption>Fonte: Autor da Imagem 10</figcaption>
+        </figure>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
