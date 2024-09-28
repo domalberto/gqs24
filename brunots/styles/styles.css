@@ -57,11 +57,7 @@ nav ul {
     list-style: none;
     padding: 10;
 }
-.dist{
-    bottom: 20px;
-    top: 20px;
-    left:20px;
-}
+
 
 
 nav ul li {
@@ -137,6 +133,12 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+}
+
+.dist{
+    bottom: 20px;
+    top: 20px;
+    left:20px;
 }
 
 blockquote {
