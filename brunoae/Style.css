@@ -135,8 +135,8 @@ body{
   width: 100%; /* Ocupa toda a largura da página */
   height: 10%; /* Ocupa toda a altura da página */
   display: flex; /* Faz com que o conteúdo seja exibido lado a lado */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content:center; /* Centraliza o conteúdo horizontalmente */
+  align-items:stretch; /* Centraliza o conteúdo verticalmente */
 }
 
 .carousel-item .row .col-md-4 img {
