@@ -265,3 +265,37 @@
     to { transform: translateY(0); opacity: 1; }
 }
 
+/* ================================
+   Seção de Professores
+   ================================ */
+   .professor-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem e quebrem em várias linhas se necessário */
+    justify-content: space-around; /* Espaça os itens igualmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px;
+}
+
+.professor-item {
+    text-align: center;
+    width: 200px; /* Largura fixa para os itens */
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out; /* Animação de hover */
+}
+
+.professor-item img {
+    width: 100%; /* A largura da imagem será igual à do container */
+    border-radius: 50%; /* Imagens circulares */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.professor-item p {
+    color: #e0e0e0;
+}
+
+.professor-item:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
