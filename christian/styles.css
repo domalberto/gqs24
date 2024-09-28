@@ -41,7 +41,10 @@ main {
     text-align: center;
     border-radius: 10px; /* Adiciona bordas redondas ao main */
 }
-
+main section img {
+    height: 200px;
+    border-radius: 10px; /* Adiciona bordas redondas às imagens das seções */
+}
 #about p {
     text-align: justify;
     border-radius: 10px; /* Adiciona bordas redondas ao parágrafo do about */
