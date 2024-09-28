@@ -57,7 +57,9 @@ nav ul {
     list-style: none;
     padding: 10;
 }
-
+.dist{
+    bottom: 20px;
+}
 
 
 nav ul li {
