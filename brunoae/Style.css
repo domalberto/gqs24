@@ -8,6 +8,7 @@ body{
 .nav-item{
     font-size: 1.1em;
     margin: 0 5px 0 5px;
+    color: #000;
 }
 
 .navbar-brand{
@@ -19,7 +20,7 @@ body{
 }
 
 .navbar{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -39,6 +40,13 @@ body{
     border-radius: 0%;
 }
 
+#btn-getConnected:hover {
+    transform: scale(1.2);
+    background-color: #007bff;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
 #h1-welcome{
     text-transform: uppercase;
     font-weight: 400;
@@ -52,42 +60,14 @@ body{
     color: #000;
 }
 
-
-
 #connect-title{
     margin: 50px 0 20px 0;
 }
 
 #social i{
-    margin: 30px 25px 100px 25px;
+    margin: 30px 25px 10px 25px;
     font-size: 3.8em;
     color: rgb(182, 182, 182);
-}
-
-#facebook:hover{
-    color: RGB(52,81,162);
-    transition-duration: 500ms;
-}
-
-#twitter:hover{
-    color: RGB(48,142,239);
-    transition-duration: 500ms;
-}
-#github:hover{
-    color: RGB(27,30,34);
-    transition-duration: 500ms;
-}
-#medium:hover{
-    color: RGB(0,0,0);
-    transition-duration: 500ms;
-}
-#instagram:hover{
-    color: RGB(164,35,103);
-    transition-duration: 500ms;
-}
-#youtube:hover{
-    color: RGB(255,39,39);
-    transition-duration: 400ms;
 }
 
 .techImages{
@@ -101,31 +81,83 @@ body{
     padding: 0;
 }
 
-.html5{
-    background: rgb(247,120,40);
-}
-
-.css3{
-    background: #2098d1;
-}
-
-.js{
-    background: rgb(249,225,34);
-}
-
-.react{
-    background: rgb(29, 29, 29);
-}
-
-.bootstrap{
-    background: rgb(138, 73, 179);
-}
-
-.nodeJS{
-    background: rgb(72, 206, 150);
-}
-
 .title{
     margin: 70px 0 25px 0;
 }
 
+#sobre p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+/* Adicione o seguinte código ao seu arquivo Style.css */
+#carouselProfessores {
+    width: 100%; /* Ocupa toda a largura da página */
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o padding */
+  }
+  
+  .carousel-inner {
+    width: 100%; /* Ocupa toda a largura da página */
+    height: 32vh; /* Ocupa toda a altura da página */
+    display: flex; /* Faz com que o conteúdo seja exibido lado a lado */
+    flex-wrap: wrap; /* Permite que o conteúdo seja exibido em várias linhas */
+  }
+  
+  .carousel-item {
+    width: 100%; /* Ocupa toda a largura da página */
+ 
+    background-color: #fff; /* Adicione um fundo branco */
+    display: flex; /* Faz com que o conteúdo seja exibido lado a lado */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 0; /* Remove a borda */
+    margin: 0; /* Remove a margem */
+  }
+  
+  .carousel-item .row {
+    width: 100%; /* Ocupa toda a largura da página */
+    height: 10%; /* Ocupa toda a altura da página */
+    display: flex; /* Faz com que o conteúdo seja exibido lado a lado */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+  }
+  
+  .carousel-item .row .col-md-4 img {
+    width: 100%; /* Ocupa toda a largura do container */
+    height: auto; /* Mantém a altura original da imagem */
+    object-fit: contain; /* Exibe a imagem em seu tamanho original */
+    max-height: 200px; /* Define a altura máxima do container */
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    width: 30px; /* Largura da seta */
+    height: 30px; /* Altura da seta */
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+  
+  .carousel-control-prev-icon {
+    transform: rotate(180deg); /* Corrige a direção da seta da esquerda */
+  }
+
+  .nome-professor {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .scroll-effect {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .scroll-effect.ativo {
+    opacity: 1;
+    transform: translateY(0);
+  }
