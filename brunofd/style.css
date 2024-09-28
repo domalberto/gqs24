@@ -5,8 +5,8 @@ body {
     background-color: #f4f4f4;
 }
 header {
-    background-color: #7fd0d6;
-    color: #fff;
+    background-color: #0000ff; /* Azul */
+    color: #fff; /* Branco */
     padding: 10px 0;
     text-align: center;
 }
@@ -16,12 +16,12 @@ header {
     overflow: hidden;
 }
 .content {
-    background: #fff;
+    background: #fff; /* Branco */
     padding: 20px;
     margin-top: 20px;
 }
-h1,h4 {
-    color: #1605ac; 
+h1, h4 {
+    color: #0000ff; /* Azul */
 }
 h2 {
     color: #333;
@@ -35,8 +35,6 @@ ul li {
     margin: 5px 0;
     padding: 10px;
 }
-
-
 .menu {
     display: flex;
     justify-content: space-around;
@@ -44,7 +42,7 @@ ul li {
     padding: 10px;
 }
 .menu a {
-    color: #fff;
+    color: #fff; /* Branco */
     text-decoration: none;
     padding: 10px;
 }
@@ -52,17 +50,15 @@ ul li {
     background-color: #ffff00; /* Amarelo */
     color: #000; /* Preto */
 }
-
 .content.active {
     display: block;
 }
 .slide {
-    display: block;
+    display: none;
 }
 .slide.active {
     display: block;
 }
-
 .slide img {
     width: 100%;
     height: auto;
