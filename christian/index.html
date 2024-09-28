@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Logo do Site" style="height: 50px;">
         <h1>Título do Site</h1>
         <h2>Subtítulo do Site</h2>
         <nav>
@@ -29,18 +30,6 @@
                 <li>Serviço 2</li>
                 <li>Serviço 3</li>
             </ul>
-        </section>
-        <section id="contact">
-            <h2>Contato</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
         </section>
     </main>
     <section id="gallery">
@@ -86,6 +75,22 @@
             <figcaption>Fonte: Autor da Imagem 10</figcaption>
         </figure>
     </section>
+    <footer>
+        <div style="display: flex; justify-content: space-between;">
+            <section id="contact-info" style="text-align: left;">
+                <h2>Meios de Contato</h2>
+                <p>Email: contato@meusite.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua Exemplo, 123, Cidade, Estado</p>
+            </section>
+            <nav style="text-align: right; margin-top: 80px;">
+                <button onclick="handleClick('botao1')">Botão 1</button>
+                <button onclick="handleClick('botao2')">Botão 2</button>
+                <button onclick="handleClick('botao3')">Botão 3</button>
+                <button onclick="handleClick('botao4')">Botão 4</button>
+            </nav>
+        </div>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
