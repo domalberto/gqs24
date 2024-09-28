@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Genera SemiBold";
+    src: url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.eot");
+    src: url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.svg#Genera SemiBold") format("svg");
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 99%;
+    background-color: #007bff;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px; /* Adiciona bordas redondas ao header */
+}
+
+header img {
+    height: 120px;
+}
+
+header h4 {
+    font-family: "Genera SemiBold";
+    font-size: 1.5em;
+    color: #000;
+    margin: 0;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 10;
+    background-color: #f2f2f2;
+}
+main {
+    margin-top: 240px;
+    text-align: center;
+    border-radius: 10px; /* Adiciona bordas redondas ao main */
+}
+main section img {
+    height: 200px;
+    border-radius: 10px; /* Adiciona bordas redondas às imagens das seções */
+}
+#about p {
+    text-align: justify;
+    border-radius: 10px; /* Adiciona bordas redondas ao parágrafo do about */
+}
+
+#services ul {
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px; /* Adiciona bordas redondas à lista de serviços */
+}
+
+#gallery {
+    text-align: center;
+    border-radius: 10px; /* Adiciona bordas redondas à galeria */
+}
+
+#gallery div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px; /* Adiciona bordas redondas ao div da galeria */
+}
+
+#gallery figure {
+    margin: 10px;
+    border-radius: 10px; /* Adiciona bordas redondas às figuras da galeria */
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do rodapé */
+    background-color: #007bff; /* Altera a cor de fundo do rodapé */
+    color: #fff; /* Altera a cor do texto do rodapé para branco */
+    padding: 20px; /* Adiciona padding ao rodapé */
+    border-radius: 10px; /* Adiciona bordas redondas ao rodapé */
+}
+
+#contact-info {
+    text-align: left;
+    border-radius: 10px; /* Adiciona bordas redondas ao contato */
+}
+
+footer nav {
+    text-align: right;
+    margin-top: 0px;
+    border-radius: 10px; /* Adiciona bordas redondas à navegação do footer */
+}
+footer img {
+    height: 200px;
+    text-align: left;
+    position: absolute;
+    left: 40px; /* Recuado 40px do canto esquerdo da tela */
+}
+
+footer div section p{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px; /* Adiciona bordas redondas ao div da seção do rodapé */
+}
+h1 {
+    font-family: "Genera SemiBold";
+    font-size: 2.5em;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+}
+
+section h2{
+    font-family: "Genera SemiBold";
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    margin: 10;
+    padding: 10;
+}
+
+footer section h2{
+    font-family: "Genera SemiBold";
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin: 10;
+    padding: 10;
+}
+section h4{
+    font-family: "Genera SemiBold";
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+    margin: 10;
+    padding: 10;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+figure img {
+    height: 200px;
+    border-radius: 10px; /* Adiciona bordas redondas às imagens das figuras */
+}

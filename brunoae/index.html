@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho Acadêmico</title>
+    <title>Curso de Engenharia da Computação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="midias/logo-dom.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css">
 </head>
 <body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top" id="nav navbar">
+          <div class="container">
+            <a href="#" class="navbar-brand"><img src="midias/logo-dom.png" style="width: 120px; height: 120px; vertical-align: middle; margin-right: 10px;"/> <span id="text-brand">Engenharia da Computação</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navToggler">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home" id="opc" alt="Botão home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre" id="opc" alt="Botão sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galeria" id="opc" alt="Botão galeria">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#professores" id="opc" alt="Botão professores">Professores</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-link" id="aumentar-fonte" alt="Botão aumentar fonte">A+</button>
+                  <button class="btn btn-link" id="diminuir-fonte" alt="Botão diminuir fonte">A-</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+    <!--Home Section-->
+    <div id="home">
+        <div class="landing text-center">
+            <h1 id="h1-welcome">Engenharia da Computação</h1>
+            <p id="p-welcome">Faculdade Dom Alberto</p>
+            <a href="https://domalberto.edu.br/curso/engenharia-da-computacao/" target="_blank" class="btn btn-outline-light bg-primary btn-lg" id="btn-getConnected" alt="Botão matricule-se">Matricule-se</a>
+        </div>
+    </div>
+
+    <!--sobre Section-->
+    <div id="sobre" class="container-fluid text-center">
+        <div class="col12">
+            <h2 class="title">Sobre</h2>
+            <p>O curso de Engenharia da Computação combina fundamentos de engenharia com ciência da computação, preparando profissionais para projetar, desenvolver e implementar sistemas computacionais e eletrônicos. Ele abrange áreas como programação, arquitetura de computadores, eletrônica digital, sistemas embarcados, redes de computadores, inteligência artificial, além de disciplinas de matemática e física aplicadas. O curso enfatiza a criação de soluções tecnológicas inovadoras, desde o desenvolvimento de software até a construção de hardware.</p>
+            <p>Ao longo da graduação, os alunos têm a oportunidade de participar de projetos práticos e estágios, adquirindo experiência na resolução de problemas reais da indústria e da pesquisa. O engenheiro da computação formado possui habilidades para atuar em diversos setores, como telecomunicações, automação industrial, desenvolvimento de software, segurança digital e inovação tecnológica, sendo altamente requisitado no mercado de trabalho.</p>
+        </div>
+    </div>
     
+    <!--galeria Section-->
+    <div id="galeria"></div>
+
+    <footer>
+    <!--professores -->
+        <div id="professores" class="row text-center">
+            <div class="col-12">
+            <h2 class="title">Professores</h2>
+            </div>
+            <div id="carouselProfessores" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                    <img src="midias/professores/carla.png" alt="Professora Carla" class="img-fluid">
+                    <p class="nome-professor">Carla</p>
+                    </div>
+                    <div class="col-md-4">
+                    <img src="midias\professores\candice.png" alt="Professora Candice" class="img-fluid">
+                    <p class="nome-professor">Candice</p>
+                    </div>
+                    <div class="col-md-4">
+                    <img src="midias\professores\carol.png" alt="Professora Carol" class="img-fluid">
+                    <p class="nome-professor">Carol</p>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                    <img src="midias\professores\felipe.png" alt="Professor Filipe" class="img-fluid">
+                    <p class="nome-professor">Filipe</p>
+                    </div>
+                    <div class="col-md-4">
+                    <img src="midias\professores\james.png" alt="Professor James" class="img-fluid">
+                    <p class="nome-professor">James</p>
+                    </div>
+                    <div class="col-md-4">
+                    <img src="midias\professores\lucas.png" alt="Professor Lucas" class="img-fluid">
+                    <p class="nome-professor">Lucas</p>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                        <img src="midias\professores\luis.png" alt="Professor Luis" class="img-fluid">
+                        <p class="nome-professor">Luis</p>
+                        </div>
+                        <div class="col-md-4">
+                        <img src="midias\professores\samantha.png" alt="Professora Samantha" class="img-fluid">
+                        <p class="nome-professor">Samantha</p>
+                        </div>
+                        <div class="col-md-4">
+                        <img src="midias\professores\samia.png" alt="Professora Samia" class="img-fluid">
+                        <p class="nome-professor">Carla</p>
+                        </div>
+                    </div>
+                    </div>
+                <!-- Adicione mais itens aqui -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselProfessores" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselProfessores" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
 </body>
 </html>

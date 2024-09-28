@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://db.onlinewebfonts.com/c/71ac940a089dbc8bc7de49f612ff041c?family=Genera+SemiBold" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade Dom Alberto - Engenharia da Computação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo do Site">
+        <h1>ENGENHARIA DA COMPUTAÇÃO</h1>
+        <h4>Faculdade Dom Alberto</h4>
+        <nav>
+            <button onclick="location.href='./index.html'">Inicio</button>
+            <button onclick="location.href='./galeria.html'">Galeria</button>
+         </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Sobre o curso</h2>
+            <img src="logo-eng.png" alt="Imagem de um computador">
+            <p>
+            A Engenharia da Computação projeta, desenvolve e gerencia sistemas computacionais, incluindo hardware, software, redes e sistemas embarcados. O curso forma profissionais habilitados para criar soluções tecnológicas inovadoras em áreas como comunicações, automação e inteligência artificial, com uma metodologia que abrange tópicos de eletrônica, programação, arquitetura de sistemas, redes e segurança.
+            </p>
+            <p>
+            Os alunos têm a oportunidade de trabalhar em projetos práticos, participando de pesquisa e desenvolvimento de aplicativos, sistemas embarcados, redes de computadores e sistemas de controle e automação. A formação abre portas para carreiras em empresas de desenvolvimento de software, fabricantes de hardware, empresas de telecomunicações, setores de automação industrial e bancos. 
+            </p>
+            <p>Fonte: <a href="https://querobolsa.com.br/cursos-e-faculdades/engenharia-de-computacao" method="_blank">Querobolsa</a>. (Abre em nova guia)
+            </p>
+            
+        </section>
+        <section id="services">
+            <h2>Informações Adicionais</h2>
+            <ul>
+                <li>
+                    <button id="gradeCurricular" onclick="toggleGradeCurricular()">Grade Disciplinar</button>
+                    <div id="grade-Curricular" style="display: none; max-height: 400px; overflow-y: scroll;">
+                        <p>Informações detalhadas sobre a grade curricular do curso.</p>
+                        <ul> <!-- tabela de grade curricular -->
+                            <li>Semestre 1</li>
+                            <table>
+                                
+                                <thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Algoritmos e Lógica de Programação</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cálculo I</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arquitetura e Organização de Computadores</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Geometria Analítica</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Metodologia Científica e Tecnológica</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teoria da Computação</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 2</li>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Física I</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cálculo II</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Álgebra Linear</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sistemas Operacionais</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Estrutura de Dados</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atividades Curriculares de Extensão – ACEx</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 3</li>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Engenharia de Software</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pesquisa e Classificação de Dados</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equações Diferenciais Ordinárias</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Física II</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matemática Discreta</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sistemas Digitais</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atividades Curriculares de Extensão – ACEx</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 4</li>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Redes de Computadores</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processos Estocásticos</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Funções de Variáveis Complexas</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fundamentos de Administração para Engenheiros</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Introdução à Ciências do Ambiente</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Introdução à Teoria Eletromagnética</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atividades Curriculares de Extensão – ACEx</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 5</li>   
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Disciplinas</td>
+                                        <td>Carga Horária</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Interface Homem Máquina</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Linguagem de Programação I</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Projetos de Engenharia I</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Circuitos Elétricos I</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Computação Gráfica e Processamento de Imagens</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Direito e Legislação</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atividades Curriculares de Extensão – ACEx</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 6</li>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Engenharia Econômica</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Programação Paralela</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Linguagem de Programação II</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Projetos de Engenharia II</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Circuitos Elétricos II</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Microprocessadores e Microcontroladores</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atividades Curriculares de Extensão – ACEx</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 7</li>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Introdução aos Sistemas de Comunicação</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Programação Orientada à Objetos</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sociedade e Cultura</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Microeletrônica</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gestão de Projetos</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Controle e Automação</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atividades Curriculares de Extensão – ACEx</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 8</li>
+                            <table>
+                                <thead></thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                                    <tr>
+                                        <td>Projeto de Pesquisa em Engenharia de Computação</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Projeto de Sistemas Embarcados</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Projeto de Sistemas Distribuídos</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inteligência Artificial</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Concepção de Circuitos Integrados</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atividades Curriculares de Extensão – ACEx</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 9</li>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Automação Industrial</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Compiladores</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Modelagem não Relacional (NoSql)</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trabalho de Conclusão de Curso I</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Estágio Supervisionado I</td>
+                                        <td>120 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atividades Curriculares de Extensão – ACEx</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li>Semestre 10</li>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Disciplinas</th>
+                                        <th>Carga Horária</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tópicos Avançados em Engenharia de Computação</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Disciplina Optativa</td>
+                                        <td>40 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gerência e Qualidade de Software</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trabalho de Conclusão de Curso II</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Estágio Supervisionado II</td>
+                                        <td>120 horas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- Adicione mais matérias conforme necessário -->
+                        </ul>
+                    </div>
+                </li>
+              <!--  <li>Serviço 2</li>
+                    <li>Serviço 3</li> -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <img src="logo.png" alt="Logo do Site">
+        <div>
+            <section id="contact-info">
+                <h2>Meios de Contato</h2>
+                <p>Email: dom@domalberto.edu.br</p>
+                <p>Telefone: 0800 006 6370</p>
+                <p>Endereço: Rua Ramiro Barcelos, nº 892. Centro, Santa Cruz do Sul - RS</p>
+            </section>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

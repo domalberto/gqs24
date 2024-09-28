@@ -1,10 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+// Controles para próximo/anterior
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
+// Controle para selecionar slide específico
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }

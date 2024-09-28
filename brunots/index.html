@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Engenharia da Computação</title>
-    <link rel="stylesheet" href="Styles/styles.css">
-    <link rel="icon" href="Midias/imagens/icone.png" type="image/png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="midias/imagens/icone.png" type="image/png">
 </head>
 <body>
    
-    <nav class="custom-navbar">
+    <nav class="custom-navbar" aria-label="Menu geral">
         <ul>
-            <img src="Midias/imagens/icone.png" alt="Ícone Dom Alberto" style="width: 120px; height: 120px; vertical-align: middle; margin-right: 10px;">
+            <img src="midias/imagens/icone.png" alt="Ícone Dom Alberto" style="width: 120px; height: 120px; vertical-align: middle; margin-right: 10px;">
             <li><a href="https://domalberto.edu.br/">Home</a></li>
             <li><a href="https://domalberto.edu.br/vestibular/">Vestibular</a></li>
             <li><a href="#">Cursos</a></li>
@@ -22,8 +22,8 @@
             <li><a href="#">Contato</a></li>
         </ul>
         <div class="search-box">
-            <input type="text" placeholder="Pesquisar...">
-            <select>
+            <input aria-label="Ferramenta de pesquisa" type="text" placeholder="Pesquisar...">
+            <select aria-label="Pesquisa por ...">
                 <option value="tipo1">Tipo de Curso</option>
                 <option value="tipo2">Graduação</option>
                 <option value="tipo3">Pós-graduação</option>
@@ -34,14 +34,14 @@
     <header role="banner">
         
         <h1>Engenharia da Computação</h1>
-        <nav role="navigation">
+        <nav role="navigation" class="dist">
             <p>Tabela de conteúdos</p>
             <ul>
-                <li><a href="#sobre" tabindex="0">Sobre o Curso</a></li>
-                <li><a href="#beneficios" tabindex="0">Benefícios</a></li>
-                <li><a href="#curriculo" tabindex="0">Currículo</a></li>
-                <li><a href="#depoimentos" tabindex="0">Depoimentos</a></li>
-                <li><a href="#inscricao" tabindex="0">Inscrição</a></li>
+                <li><a href="#sobre" tabindex="0" >Sobre o Curso</a></li>
+                <li><a href="#beneficios" tabindex="0" >Benefícios</a></li>
+                <li><a href="#curriculo" tabindex="0" >Currículo</a></li>
+                <li><a href="#depoimentos" tabindex="0" >Depoimentos</a></li>
+                <li><a href="#inscricao" tabindex="0" >Inscrição</a></li>
             </ul>
         </nav>
     </header>
@@ -52,16 +52,17 @@
             <p><b>Engenharia da Computação é um campo fascinante que vai muito além do simples desenvolvimento de hardware.</b>
                 Embora muitos associem essa área apenas à criação de circuitos e dispositivos eletrônicos, a verdade é que ela abrange
                 uma vasta gama de conhecimentos e habilidades.<br><br> No curso de Engenharia da Computação, os alunos são imersos em um ambiente onde a programação avançada e o desenvolvimento de software são tão fundamentais quanto o design de hardware. Eles aprendem a criar sistemas integrados que combinam componentes físicos com algoritmos sofisticados, resultando em soluções inovadoras para problemas complexos.</p>
-            <img src="Midias/imagens/estudante_olhando_computador.jpg" alt="Estudante olhando para computador">
+            <img src="midias/imagens/estudante_olhando_computador.jpg" alt="Estudante olhando para computador">
         </section>
 
         <section id="beneficios" class="section">
             <h2>Benefícios do Curso</h2>
             <div class="slideshow-container">
         
+                <a class="prev" target=0 onclick="plusSlides(-1)" aria-label="Slide anterior" role="button">&#10094;</a>
 <!-- Slide 1 -->
 <div class="mySlides fade">
-    <img src="Midias/imagens/Laboratorio_informática.jpg"style="width:100%;height: auto;"  alt="Laboratório de Computação moderno">
+    <img src="midias/imagens/Laboratorio_informática.jpg"  alt="Laboratório de Computação moderno">
     <div class="text">Laboratórios modernos e bem equipados para práticas avançadas.</div>
 </div>
 
@@ -69,14 +70,12 @@
 <div class="mySlides fade">
     <div  style="display: flex; justify-content: center; align-items: center;">
         <section class="professor-card">
-            <img src="Midias/imagens/luiz.png" alt="Professor Luiz Rauber" style="width:100%;height: 100%;">
-            <br>
-            <p><a href="http://lattes.cnpq.br/5121001048317706">Luiz Rauber</a></p>
+            <img src="midias/imagens/luiz.png" alt="Professor Luiz Rauber">
+            <p><br><a href="http://lattes.cnpq.br/5121001048317706">Luiz Rauber</a></p>
         </section>
         <section class="professor-card">
-            <img src="Midias/imagens/Filipe.png" alt="Professor Filipe Flores" style="width:100%;height: 100%;">
-            <br>
-            <p><a href="http://lattes.cnpq.br/6761800842607421">Filipe Flores</a></p>
+            <img src="midias/imagens/Filipe.png" alt="Professor Filipe Flores">
+            <p><br><a href="http://lattes.cnpq.br/6761800842607421">Filipe Flores</a></p>
         </section>
     </div>
     <div class="text">Professores com ampla experiência no mercado de trabalho.</div>
@@ -84,18 +83,18 @@
 
 <!-- Slide 3 -->
 <div class="mySlides fade">
-    <img src="Midias/imagens/Projetos_tecnicos.jpeg" alt="Estudantes desenvolvendo projetos práticos">
+    <img src="midias/imagens/Projetos_tecnicos.jpeg" alt="Estudantes desenvolvendo projetos práticos">
     <div class="text">Projetos práticos e integradores com empresas reais.</div>
 </div>
 
 <div class="mySlides fade">
-    <img src="Midias/imagens/Reconhecido_pelo_mec.jpeg" style="width:100%;height: auto;" alt="Certificado reconhecido">
+    <img src="midias/imagens/Reconhecido_pelo_mec.jpeg"  alt="Certificado reconhecido">
     <div class="text">Certificação reconhecida nacionalmente. <a href="https://www.youtube.com/watch?v=oF_95V22c6U" target="_blank">Confira o vídeo</a></div>
 </div>
         
                 <!-- Controles de navegação -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <a class="next" target=0 onclick="plusSlides(1)" aria-label="Slide seguinte" role="button">&#10095;</a>
             </div>
         
             <!-- Pontos indicativos -->
@@ -105,7 +104,7 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
-        </section>
+        
         <section id="curriculo" class="section">
           <h2>Currículo do Curso</h2>
   
@@ -246,7 +245,7 @@
 
         <section id="inscricao" class="section">
             <h2>Inscreva-se Agora</h2>
-            <p>Preencha o formulário abaixo para receber mais informações</p>
+            <p>Preencha o formulário abaixo para receber mais informações e garantir sua vaga no próximo semestre.</p>
             <form action="/submit" method="POST">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required aria-label="Nome Completo" aria-describedby="nomeInfo">
@@ -267,8 +266,19 @@
         <p>© 2024 Faculdade Dom Alberto. Todos os direitos reservados.</p>
     </footer>
 
-    <script type="text/javascript" src="Script/app.js">
+    <script type="text/javascript" src="script/app.js">
 
     </script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 </html>
