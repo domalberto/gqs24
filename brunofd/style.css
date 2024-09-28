@@ -47,7 +47,7 @@ ul li {
     padding: 10px;
 }
 .menu a:hover {
-    background-color: #ffff00; /* Amarelo */
+    background-color: #1100ff; /* Amarelo */
     color: #000; /* Preto */
 }
 .content.active {
