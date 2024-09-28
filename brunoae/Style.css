@@ -2,8 +2,24 @@ body{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     background: #eee;
+    font-size: 16px;
 }
 
+#aumentar-fonte, #diminuir-fonte {
+    color: #000; /* cor do texto */
+    background-color: #007bff; /* cor de fundo */
+    border: none; /* sem borda */
+    padding: 5px 10px; /* espaçamento interno */
+    font-size: 16px; /* tamanho da fonte */
+    cursor: pointer; /* cursor de ponteiro */
+    position: relative; /* posição relativa */
+    top: 10px; /* distância do topo */
+    left: 20px; /* distância da esquerda */
+  }
+  
+  #aumentar-fonte:hover, #diminuir-fonte:hover {
+    background-color: #0056b3; /* cor de fundo ao passar o mouse */
+  }
 
 .nav-item{
     font-size: 1.1em;
@@ -105,7 +121,7 @@ body{
   }
   
   .carousel-item {
-    width: 100%; /* Ocupa toda a largura da página */
+    width: 95%; /* Ocupa toda a largura da página */
  
     background-color: #fff; /* Adicione um fundo branco */
     display: flex; /* Faz com que o conteúdo seja exibido lado a lado */
@@ -133,7 +149,7 @@ body{
   .carousel-control-prev, .carousel-control-next {
     background-color: transparent; /* Fundo transparente */
     border: none; /* Sem borda */
-    width: 30px; /* Largura da seta */
+    width: 10px; /* Largura da seta */
     height: 30px; /* Altura da seta */
   }
   
@@ -151,13 +167,3 @@ body{
     color: #333;
   }
 
-  .scroll-effect {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .scroll-effect.ativo {
-    opacity: 1;
-    transform: translateY(0);
-  }

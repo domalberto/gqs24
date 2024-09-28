@@ -1,14 +1,17 @@
-const elementos = document.querySelectorAll(".scroll-effect");
+const aumentarFonte = document.getElementById('aumentar-fonte');
+const diminuirFonte = document.getElementById('diminuir-fonte');
+const corpo = document.body;
 
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-  elementos.forEach((elemento) => {
-    const elementoTop = elemento.offsetTop;
-    const elementoHeight = elemento.offsetHeight;
-    if (scrollPosition >= elementoTop - elementoHeight / 2) {
-      elemento.classList.add("ativo");
-    } else {
-      elemento.classList.remove("ativo");
-    }
-  });
+let tamanhoFonte = 16;
+
+aumentarFonte.addEventListener('click', () => {
+  tamanhoFonte += 2;
+  corpo.style.fontSize = `${tamanhoFonte}px`;
+});
+
+diminuirFonte.addEventListener('click', () => {
+  if (tamanhoFonte > 10) {
+    tamanhoFonte -= 2;
+    corpo.style.fontSize = `${tamanhoFonte}px`;
+  }
 });
