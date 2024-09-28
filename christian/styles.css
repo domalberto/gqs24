@@ -1,12 +1,13 @@
 @font-face {
     font-family: "Genera SemiBold";
     src: url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.eot");
-    src: url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.svg#Genera SemiBold")format("svg");
+    src: url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.svg#Genera SemiBold") format("svg");
 }
+
 header {
     position: fixed;
     top: 0;
@@ -14,42 +15,61 @@ header {
     background-color: #007bff;
     z-index: 1000;
     text-align: center;
+    border-radius: 10px; /* Adiciona bordas redondas ao header */
 }
+
 header img {
     height: 120px;
 }
+
 main {
     margin-top: 240px;
     text-align: center;
+    border-radius: 10px; /* Adiciona bordas redondas ao main */
 }
+
 #about p {
     text-align: justify;
+    border-radius: 10px; /* Adiciona bordas redondas ao parágrafo do about */
 }
+
 #services ul {
     display: inline-block;
     text-align: left;
+    border-radius: 10px; /* Adiciona bordas redondas à lista de serviços */
 }
+
 #gallery {
     text-align: center;
+    border-radius: 10px; /* Adiciona bordas redondas à galeria */
 }
+
 #gallery div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 10px; /* Adiciona bordas redondas ao div da galeria */
 }
+
 #gallery figure {
     margin: 10px;
+    border-radius: 10px; /* Adiciona bordas redondas às figuras da galeria */
 }
+
 footer {
     display: flex;
     justify-content: space-between;
 }
+
 #contact-info {
     text-align: left;
+    border-radius: 10px; /* Adiciona bordas redondas ao contato */
 }
+
 footer nav {
     text-align: right;
-    margin-top: 80px;
+    margin-top: 0px;
+    border-radius: 10px; /* Adiciona bordas redondas à navegação do footer */
 }
 
 h1 {
@@ -59,5 +79,10 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 0;
-    margin-top: -20px; 
+    margin-top: -20px;
+}
+
+figure img {
+    height: 200px;
+    border-radius: 10px; /* Adiciona bordas redondas às imagens das figuras */
 }
