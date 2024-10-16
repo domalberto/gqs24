@@ -1,0 +1,73 @@
+/* Definindo o plano de fundo da página com listras inclinadas */
+body {
+    background-color: #2f2f2f; /* Cinza escuro */
+    background-image: linear-gradient(45deg, #4a4a4a 25%, transparent 25%, transparent 50%, #4a4a4a 50%, #4a4a4a 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando a section principal */
+section {
+    max-width: 60%; /* Ocupa 60% da tela, com 20% de margem de cada lado */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d3d3d3; /* Cinza mais claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando os títulos e o parágrafo */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilizando a lista de links */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Estilizando os botões */
+a {
+    display: inline-block;
+    width: 200px; /* Define a largura dos botões */
+    padding: 10px 0;
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Efeito hover nos botões */
+a:hover {
+    background-color: #0066cc; /* Azul claro no hover */
+}
