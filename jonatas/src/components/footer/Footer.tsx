@@ -1,42 +1,41 @@
-import LogoDomAlberto from "/src/assets/icons/logo_domalberto.jpg";
+import logoDomAlberto from "/src/assets/icons/logo_domalberto.jpg";
+import logoJonatas from "/src/assets/icons/iconJonatas.svg";
+import { Github, Instagram, PanelTop } from "lucide-react";
 
 export default function Footer() {
   return (
     <>
-      <footer className="bg-gradient-to-br to-amarelo_1 min-h-[200px] from-amarelo_3 flex max-md:flex-col justify-between items-center mx-4 rounded-t-lg px-10 py-5">
-        <a className="h-[100px] flex items-center ">
-          <img
-            src={LogoDomAlberto}
-            alt=""
-            className="h-[80px] px-4 rounded-lg transition-all hover:bg-amarelo_3"
-          />
-        </a>
-
-        <section className="text-branco_1">
-          <p>Todos os direitos reservados </p>
-          <p>Jonatas Gollmann &copy; - 2024 </p>
-        </section>
-
-        <nav className="h-28">
-          <ul className="flex flex-col items-center justify-center h-full gap-6">
-            <li className="text-branco_1 font-light ">
-              <a
-                href="https://github.com/jonatasGollmann/"
-                className="p-3 hover:bg-amarelo_3 transition-all rounded-lg"
-              >
-                Github
+      <footer className="bg-orange_1">
+        <div className="flex flex-col size-full justify-center items-center py-10">
+          <section className="flex gap-5 items-center">
+            <img
+              src={logoDomAlberto}
+              alt="Logotipo da faculdade Dom Alberto."
+              className="size-20 "
+            />
+            <img
+              src={logoJonatas}
+              alt="Logitipo de identificação de Jonatas Gollmann"
+              className="size-10"
+            />
+          </section>
+          <section>
+            <nav className="flex gap-4 py-3 text-white_3 border-b-2 mb-4">
+              <a href="https://www.instagram.com/dom.alberto/" className="p-2.5 hover:bg-orange_3 bg-orange_2 hover:text-white_2 rounded-full hover:rounded-lg transition-all">
+                <Instagram />
               </a>
-            </li>
-            <li className="text-branco_1 font-light ">
-              <a
-                className="p-3 hover:bg-amarelo_3 transition-all rounded-lg"
-                href="https://domalberto.edu.br/curso/engenharia-da-computacao/"
-              >
-                Site Oficial
+              <a href="https//github.com/jonatasGollmann/" className="p-2.5 hover:bg-orange_3 bg-orange_2 hover:text-white_2 rounded-full hover:rounded-lg transition-all">
+                <Github />
               </a>
-            </li>
-          </ul>
-        </nav>
+              <a href="https://domalberto.edu.br/curso/engenharia-da-computacao/" className="p-2.5 bg-orange_2 hover:bg-orange_3 hover:text-white_2 rounded-full hover:rounded-lg transition-all">
+                <PanelTop />
+              </a>
+            </nav>
+          </section>
+          <section className="text-white_1">
+            <p>Desenvolvido por Jonatas Gollmann &copy; 2024</p>
+          </section>
+        </div>
       </footer>
     </>
   );

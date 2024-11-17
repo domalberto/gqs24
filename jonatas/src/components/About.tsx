@@ -12,13 +12,13 @@ export default function About() {
   return (
     <>
       
-      <section className="2xl:w-4/5 overflow-hidden w-full mx-auto flex flex-col justify-center items-center text-center gap-16 mb-10 mt-16">
+      <section className="2xl:w-4/5 w-full mx-auto flex flex-col justify-center items-center text-center gap-16 my-[12vh] overflow-hidden">
         <motion.h1 
         variants={entrada("bottom", 0.48)}
-        initial="hidden"
+        initial="opHidden"
         whileInView={"visible"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="bg-clip-text bg-gradient-to-bl to-azul_3 from-preto text-transparent text-2xl 2xl:text-3xl font-light">
+        viewport={{ once: true, amount: 0.7 }}
+        className="bg-clip-text bg-gradient-to-bl to-blue_4 from-blue_1 text-transparent text-2xl 2xl:text-3xl font-semibold">
           Conheça mais sobre o curso
         </motion.h1>
         <DescriptionCard

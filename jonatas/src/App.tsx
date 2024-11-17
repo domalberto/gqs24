@@ -7,7 +7,7 @@ import Home from "./components/Homepage";
 function App() {
   return (
     <>
-      <div className="font-Lexend bg-gradient-to-br from-branco_1 to-branco_2">
+      <div className="font-Lexend bg-gradient-to-br from-white_1 to-white_2">
         <Header />
         <main>
           <Home />

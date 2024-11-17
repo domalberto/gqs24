@@ -1,13 +1,11 @@
 import { useRef } from "react";
 import CarouselCards from "../cards/CarouselCards";
 import { motion, useScroll, useTransform } from "framer-motion";
-import ButtonClick from "../buttons/ButtonClick";
 import logoDomAlberto from "/src/assets/icons/logo_domalberto.jpg";
-import RobotHand from "/src/assets/images/roboticHand_small.jpg"
-import Profile from "/src/assets/images/profile_small.jpg"
-import Nairo from "/src/assets/images/nairo.jpg"
-import Devloping from "/src/assets/images/developing_small.jpg"
-
+import RobotHand from "/src/assets/images/roboticHand_small.jpg";
+import Profile from "/src/assets/images/profile_small.jpg";
+import Nairo from "/src/assets/images/nairo.jpg";
+import Devloping from "/src/assets/images/developing_small.jpg";
 
 interface iCards {
   id: number;
@@ -51,23 +49,30 @@ export default function Carousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: carouselRef });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["35%", "-35%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["40%", "-40%"]);
 
   return (
     <section
-      className="h-[350vh] bg-gradient-to-br to-azul_3 from-preto overflow-y-clip"
+      className="h-[350vh] bg-gradient-to-br to-blue_1 from-blue_3 overflow-y-clip"
       ref={carouselRef}
     >
       <div className="h-screen sticky top-0 flex flex-col justify-between items-center overflow-hidden  ">
-        <h1 className="bg-clip-text bg-gradient-to-bl to-amarelo_3 from-amarelo_2 text-transparent 2xl:text-3xl text-2xl font-light mt-4 2xl:mt-20 max-md:text-center">
-          Habilidades desenvolvidas durante a sua formação
-        </h1>
+        <div className="flex flex-col justify-center items-center max-md:px-6 text-center">
+          <h1 className="bg-clip-text bg-gradient-to-bl to-white_1 from-white_2 text-transparent 2xl:text-3xl text-2xl  mt-14 font-semibold 2xl:mt-20 max-md:text-center">
+            Habilidades desenvolvidas durante a sua formação
+          </h1>
+          <p className="text-white_1">
+            Algumas das habilidades que você desenvolverá ao longo do seu ensino
+            em Engenharia da Computação.
+          </p>
+        </div>
+
         <motion.section className="flex" style={{ x }}>
           {cards.map((card: iCards) => (
             <CarouselCards card={card} key={card.id} />
           ))}
         </motion.section>
-        <section className="2xl:h-[100px] shadow-xl flex justify-evenly w-full items-center bg-gradient-to-tr to-branco_1 from-branco_2">
+        <section className="2xl:h-[100px] shadow-xl flex justify-evenly w-full items-center bg-gradient-to-tr to-white_1 from-white_2">
           <img
             className="2xl:h-24 h-[70px]"
             src={logoDomAlberto}
@@ -76,7 +81,9 @@ export default function Carousel() {
           <p className="text-preto 2xl:text-lg text-sm max-md:hidden">
             Matricule-se já para o curso de Engenharia da Computação.
           </p>
-          <ButtonClick text="Matricule-se!" color="azul" />
+          <button className="bg-gradient-to-tr to-blue_1 from-blue_4 text-white_1 py-4 px-8 rounded-lg hover:scale-105 transition-all">
+            Matricule-se
+          </button>
         </section>
       </div>
     </section>
