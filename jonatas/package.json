@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --remote https://github.com/domalberto/gqs24.git"
   },
   "dependencies": {
     "framer-motion": "^11.5.5",
