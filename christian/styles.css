@@ -68,6 +68,14 @@ main section img {
     border-radius: 10px; /* Adiciona bordas redondas ao div da galeria */
 }
 
+#mostrar{
+    display:none;
+    }
+
+#passar_mouse:hover #mostrar{
+    display:block;
+    }    
+
 #gallery figure {
     margin: 10px;
     border-radius: 10px; /* Adiciona bordas redondas às figuras da galeria */
@@ -156,4 +164,22 @@ th {
 figure img {
     height: 200px;
     border-radius: 10px; /* Adiciona bordas redondas às imagens das figuras */
+}
+
+.custom-button {
+    background-color: #004080; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 12px; /* Bordas arredondadas */
+}
+
+.custom-button:hover {
+    background-color: #002060; /* Cor de fundo ao passar o mouse */
 }
