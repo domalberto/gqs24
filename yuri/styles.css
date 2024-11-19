@@ -1,0 +1,382 @@
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap);
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.header{
+  display: none;
+}
+
+@media (max-width:768px) {
+
+  section {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px; /
+  }
+  
+
+  #LogoDom {
+    float: left; 
+    margin-right: 10px; 
+    width: 20px;
+    height: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  h2{
+    text-align: center;
+  }
+  
+  /* Estilos gerais */
+  body {
+    background-color: #f4f4f4;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  /* Cabeçalho */
+  .header-mobile {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: #f4f4f4;
+    color: #0359b4;
+    padding: 10px;
+    max-width: 1200px;
+    margin-right: 2%;
+}
+
+  /* menu dropdown NÃO ESTÁ sendo utilizado atualmente */
+.dropdown { 
+    position: relative;
+}
+
+.menu-button {
+    cursor: pointer; 
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #f4f4f4;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.dropdown-content li {
+    padding: 8px 12px;
+}
+
+.dropdown-content li a {
+    color: #0359b4; 
+    text-decoration: none; 
+}
+
+.dropdown-content li a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Exibe o menu dropdown quando ativado */
+.show {
+    display: block;
+}
+
+  .banner-text {
+    position: absolute;
+    top: 4%;
+    left: 2%; 
+    padding: 10px;
+    border-radius: 8px; 
+    color: black; 
+  }
+  
+  .sobre {
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    padding: 10px;
+    border-radius: 12px;
+    color: black;
+    text-align: justify;
+    font-weight: 500;
+  }
+
+  .formulario {
+    width: 80%; 
+    margin-left: 0; 
+    margin-right: auto; 
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px)
+{
+
+section {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px; /
+}
+
+
+h1 {
+  font-size: 3em; 
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* Estilos gerais */
+body {
+  background-color: #f4f4f4;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px;
+}
+
+/* Cabeçalho */
+
+#LogoDom{
+  width: 55px;
+  height: 55px;
+  float: left; 
+  margin-left: 15px; 
+}
+
+.header-mobile {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background: #f4f4f4;
+  color: #0359b4;
+  padding: 5px;
+}
+
+nav {
+  margin: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin: 10px;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #0359b4;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seções */
+
+.fade-img {
+  position: relative; 
+}
+
+.fade-img:after {
+  content: ""; 
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #f4f4f4 100%);
+  height: 35%;  
+}
+
+
+.banner {
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 5%;
+    left: 2%; 
+    padding: 20px;
+    border-radius: 12px; 
+    color: black; 
+
+}
+
+.sobre {
+  position: absolute;
+  top: 25%;
+  left: 2%; 
+  margin-right: 65%;
+  padding: 20px;
+  border-radius: 12px; 
+  color: black; 
+  text-align: justify;
+  font-size: 22px;
+}
+
+}
+/* Estilo para a imagem no topo de cada benefício */
+.beneficio-imagem {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+  margin-bottom: 2%;
+}
+
+
+/* Estilo para a seção de benefícios */
+.beneficios {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%; 
+  flex-wrap: wrap;
+  margin-bottom: 1%;
+}
+
+/* Estilo para cada benefício individual */
+.beneficio {
+  flex: 1; 
+  margin: 10px; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  background-color: #f9f9f9; 
+  text-align: center; 
+  margin-bottom: 3%;
+}
+
+/* Estilo para os títulos e parágrafos nos benefícios */
+.beneficio h3 {
+  font-size: 1.2em; /* Aumenta o tamanho da fonte do título */
+}
+
+.beneficio p {
+  font-size: 1em; /* Aumenta o tamanho da fonte do parágrafo */
+}
+
+/* Estilo para a imagem do depoimento */
+.foto-depoimento {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; /* Mantém a imagem circular */
+  margin-right: 15px; 
+  float: left; /* Faz com que a imagem flutue à esquerda do texto */
+}
+
+/* Estilo para cada depoimento individual */
+.depoimentos h1 {
+  margin-top: 15px;
+}
+
+.depoimentos {
+  width: 45%; 
+}
+
+.depoimento {
+  margin-top: 15px;
+  margin-bottom: 15px; 
+  padding: 15px;
+  border-left: 4px solid #007BFF; 
+  background-color: #f0f8ff;
+  border-radius: 60px; 
+  width: 35vh;
+}
+
+.depoimento-texto {
+  overflow: hidden; /* Garante que o texto não transborde o container */
+}
+
+/* Formulário de Contato */
+
+.formulario {
+  width: 35%; /* Define a largura da seção do formulário */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background: #0359b4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+button:hover {
+  background: #044993; /* Cor do botão ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+  margin-top: 2%;
+  background-color: #0359b4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  word-spacing: 2px; /* Aumenta o espaçamento entre as palavras */
+}
+

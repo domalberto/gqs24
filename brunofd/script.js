@@ -1,15 +1,22 @@
+// Função para alternar a visibilidade do conteúdo
+function toggleContent(category) {
+    document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+    document.getElementById(category).classList.add('active');
+}
+
+// Adiciona evento de clique aos links do menu
 document.querySelectorAll('.menu a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
-        document.getElementById(this.dataset.category).classList.add('active');
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        toggleContent(this.dataset.category);
     });
 });
 
 // Inicializa a primeira categoria como ativa
 document.querySelector('.menu a').click();
 
-document.querySelectorAll('.content').forEach(content => {
+// Função para alternar slides na galeria
+function setupGallery(content) {
     const slides = content.querySelectorAll('.gallery img');
     let currentSlide = 0;
 
@@ -19,4 +26,14 @@ document.querySelectorAll('.content').forEach(content => {
         slides[currentSlide].classList.add('active');
     });
 
-    content.querySelector('.next').addEvent
+    content.querySelector('.next').addEventListener('click', () => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    });
+}
+
+// Configura a galeria para cada conteúdo
+document.querySelectorAll('.content').forEach(content => {
+    setupGallery(content);
+});
