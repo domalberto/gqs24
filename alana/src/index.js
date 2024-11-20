@@ -81,7 +81,7 @@ images.forEach((image) => {
   img.src = image.src;
   img.alt = image.alt;
   img.classList =
-    "w-full h-48 object-cover rounded-lg cursor-pointer bg-neutral-200";
+    "w-full h-48 object-cover rounded-lg cursor-pointer bg-neutral-200 hover:scale-105 hover:shadow-lg transition-transform transition-shadow transition-border";
 
   img.addEventListener("click", () => {
     modalImage.src = image.src;

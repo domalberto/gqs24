@@ -63,6 +63,14 @@
             >Fotos</a
           >
           <a
+            onclick="handleClick('depoimentos')"
+            class="hover:underline"
+            href="#depoimentos"
+            aria-label="Ir para a seção Depoimentos"
+            tabindex="0"
+            >Depoimentos</a
+          >
+          <a
             onclick="handleClick('contato')"
             class="hover:underline"
             href="#contato"
@@ -81,6 +89,7 @@
           <option value="#professores">Professores</option>
           <option value="#parcerias">Empresas parceiras</option>
           <option value="#galeria">Fotos</option>
+          <option value="#depoimentos">Depoimentos</option>
           <option value="#contato">Contato</option>
         </select>
       </nav>
@@ -305,7 +314,7 @@
           href="https://universa.faculdade.domalberto.edu.br/vestibular/v2/selecao-inscricao/captacao"
           target="_blank"
           rel="noopener noreferrer"
-          class="bg-yellow-500 text-white w-40 truncate font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
+          class="bg-yellow-500 text-blue-950 text-lg w-40 truncate font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
           aria-label="Saiba mais sobre o vestibular de verão Dom Alberto"
         >
           Saiba mais
@@ -600,6 +609,48 @@
         </div>
       </section>
 
+      <section id="depoimentos" class="container mx-auto my-8 grid gap-5">
+        <h2
+          class="text-3xl font-bold text-blue-950"
+          role="heading"
+          aria-level="2"
+        >
+          Depoimentos
+        </h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="p-4 border rounded-lg shadow-lg hover:scale-105">
+            <p class="text-gray-700">
+              "A experiência na Dom Alberto foi transformadora. Os professores
+              são excelentes e o ambiente é muito acolhedor."
+            </p>
+            <p class="text-neutral-600 font-bold mt-2">João Silva, Ex-Aluno</p>
+          </div>
+          <div class="p-4 border rounded-lg shadow-lg hover:scale-105">
+            <p class="text-gray-700">
+              "Os cursos são muito bem estruturados e me ajudaram a conseguir
+              uma ótima colocação no mercado de trabalho."
+            </p>
+            <p class="text-neutral-600 font-bold mt-2">Maria Oliveira, Aluna</p>
+          </div>
+          <div class="p-4 border rounded-lg shadow-lg hover:scale-105">
+            <p class="text-gray-700">
+              "A Dom Alberto me proporcionou uma formação de qualidade e me
+              ajudou a crescer profissionalmente."
+            </p>
+            <p class="text-neutral-600 font-bold mt-2">
+              Pedro Santos, Ex-Aluno
+            </p>
+          </div>
+          <div class="p-4 border rounded-lg shadow-lg hover:scale-105">
+            <p class="text-gray-700">
+              "Estou muito satisfeito com a minha escolha. A Dom Alberto é uma
+              instituição de ensino de excelência."
+            </p>
+            <p class="text-neutral-600 font-bold mt-2">Ana Souza, Aluna</p>
+          </div>
+        </div>
+      </section>
+
       <div
         class="relative rounded-lg bg-blue-950 text-white px-1 flex items-center justify-center text-center overflow-hidden container mx-auto"
         role="region"
@@ -624,7 +675,7 @@
             href="https://universa.faculdade.domalberto.edu.br/vestibular/v2/selecao-inscricao/captacao"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
+            class="bg-yellow-500 text-blue-950 text-lg font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
             aria-label="Inscreva-se para o vestibular"
             tabindex="0"
           >
@@ -645,7 +696,7 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-      
+
           <iframe
             class="flex-1"
             src="https://www.youtube.com/embed/cbw993m_fRw?si=BVpwgFhyStp3hEWA&cc_load_policy=1"
