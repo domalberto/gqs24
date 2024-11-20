@@ -71,6 +71,14 @@
             >Depoimentos</a
           >
           <a
+            onclick="handleClick('redes-sociais')"
+            class="hover:underline"
+            href="#redes-sociais"
+            aria-label="Ir para a seção Depoimentos"
+            tabindex="0"
+            >Redes Sociais</a
+          >
+          <a
             onclick="handleClick('contato')"
             class="hover:underline"
             href="#contato"
@@ -90,6 +98,7 @@
           <option value="#parcerias">Empresas parceiras</option>
           <option value="#galeria">Fotos</option>
           <option value="#depoimentos">Depoimentos</option>
+          <option value="#redes-sociais">Redes Sociais</option>
           <option value="#contato">Contato</option>
         </select>
       </nav>
@@ -618,21 +627,27 @@
           Depoimentos
         </h2>
         <div class="grid md:grid-cols-2 gap-4">
-          <div class="p-4 border rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-2xl">
+          <div
+            class="p-4 border rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-2xl"
+          >
             <p class="text-gray-700">
               "A experiência na Dom Alberto foi transformadora. Os professores
               são excelentes e o ambiente é muito acolhedor."
             </p>
             <p class="text-neutral-600 font-bold mt-2">João Silva, Ex-Aluno</p>
           </div>
-          <div class="p-4 border rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-2xl">
+          <div
+            class="p-4 border rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-2xl"
+          >
             <p class="text-gray-700">
               "Os cursos são muito bem estruturados e me ajudaram a conseguir
               uma ótima colocação no mercado de trabalho."
             </p>
             <p class="text-neutral-600 font-bold mt-2">Maria Oliveira, Aluna</p>
           </div>
-          <div class="p-4 border rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-2xl">
+          <div
+            class="p-4 border rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-2xl"
+          >
             <p class="text-gray-700">
               "A Dom Alberto me proporcionou uma formação de qualidade e me
               ajudou a crescer profissionalmente."
@@ -641,7 +656,9 @@
               Pedro Santos, Ex-Aluno
             </p>
           </div>
-          <div class="p-4 border rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-2xl">
+          <div
+            class="p-4 border rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-2xl"
+          >
             <p class="text-gray-700">
               "Estou muito satisfeito com a minha escolha. A Dom Alberto é uma
               instituição de ensino de excelência."
@@ -683,6 +700,93 @@
           </a>
         </div>
       </div>
+
+      <section id="redes-sociais" class="container mx-auto grid gap-5">
+        <h2
+          class="text-3xl font-bold text-blue-950 flex justify-between"
+          role="heading"
+          aria-level="2"
+        >
+          Redes sociais
+
+          <div class="flex gap-2 items-center w-min">
+            <a
+              href="https://www.instagram.com/dom.alberto/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram do Dom Alberto"
+            >
+              <img
+                src="assets/instagram.png"
+                alt="Ícone do Instagram"
+                width="30"
+                class="hover:scale-105"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/domalberto"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook do Dom Alberto"
+            >
+              <img
+                src="assets/facebook.png"
+                alt="Ícone do Facebook"
+                width="30"
+                class="hover:scale-105"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@domalbertovideos"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube do Dom Alberto"
+            >
+              <img
+                src="assets/youtube.png"
+                alt="Ícone do YouTube"
+                width="30"
+                class="hover:scale-105"
+              />
+            </a>
+          </div>
+        </h2>
+        <p class="text-gray-700">
+          Siga-nos nas redes sociais para ficar por dentro das novidades e
+          eventos da Faculdade Dom Alberto.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-4 items-center justify-center">
+          <a href="https://www.instagram.com/p/C_TrEBiMmXz/" target="_blank">
+            <img
+              src="https://instagram.com/p/C_TrEBiMmXz/media/?size=m"
+              alt="Post do Instagram"
+              class="hover:scale-105"
+            />
+          </a>
+          <a href="https://www.instagram.com/p/DCSJbm4shg3/" target="_blank">
+            <img
+              src="https://instagram.com/p/DCSJbm4shg3/media/?size=m"
+              alt="Post do Instagram"
+              class="hover:scale-105"
+            />
+          </a>
+          <a href="https://www.instagram.com/p/DA36Ht5P-_m/" target="_blank">
+            <img
+              src="https://instagram.com/p/DA36Ht5P-_m/media/?size=m"
+              alt="Post do Instagram"
+              class="hover:scale-105"
+            />
+          </a>
+          <a href="https://www.instagram.com/p/DAjisJxvh2L/" target="_blank">
+            <img
+              src="https://instagram.com/p/DAjisJxvh2L/media/?size=m"
+              alt="Post do Instagram"
+              class="hover:scale-105"
+            />
+          </a>
+        </div>
+      </section>
 
       <section id="videos" class="container mx-auto">
         <div class="flex flex-col md:flex-row gap-4">
