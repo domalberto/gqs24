@@ -11,7 +11,11 @@ function handleClick(sectionId) {
 }
 
 function handleSelectChange(select) {
-  window.location.href = select.value;
+  try {
+    window.location.hash = select.value;
+  } catch (error) {
+    console.error("Erro ao mudar a seleção de navegação:", error);
+  }
 }
 
 function getPathAfterAssets(url) {
@@ -66,7 +70,10 @@ const images = [
     alt: "Alunos participam de uma conversa com profissionais da área",
   },
   { src: "assets/galeria/e-get.jpg", alt: "Palestra com o CEO da E-get" },
-  { src: "assets/galeria/palestras.jpg", alt: "Alunos e profissionais da área durante semana acadêmica" },
+  {
+    src: "assets/galeria/palestras.jpg",
+    alt: "Alunos e profissionais da área durante semana acadêmica",
+  },
 ];
 
 const gallery = document.getElementById("gallery");
@@ -154,4 +161,41 @@ next.addEventListener("click", () => {
 
 prev.addEventListener("click", () => {
   showPreviousImage();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+  const navSelect = document.getElementById('nav-select');
+
+  function highlightNav() {
+    try {
+      let index = sections.length;
+
+      while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+      navLinks.forEach((link) => {
+        link.classList.remove("bg-yellow-500", "text-white", "px-1", "rounded-lg");
+        link.removeAttribute('aria-current');
+      });
+
+      if (navLinks[index]) {
+        navLinks[index].classList.add("bg-yellow-500", "text-white", "px-1", "rounded-lg");
+        navLinks[index].setAttribute('aria-current', 'page');
+      }
+
+      if (navSelect && sections[index].id) {
+        navSelect.value = `#${sections[index].id}`;
+      }
+    } catch (error) {
+      console.error("Erro ao destacar a navegação:", error);
+    }
+  }
+
+  try {
+    highlightNav();
+    window.addEventListener("scroll", highlightNav);
+  } catch (error) {
+    console.error("Erro ao adicionar evento de rolagem:", error);
+  }
 });
