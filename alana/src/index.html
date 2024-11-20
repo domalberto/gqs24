@@ -22,14 +22,60 @@
       />
       <nav class="text-blue-950 font-semibold" aria-label="Navegação principal">
         <div id="nav-links" class="hidden md:flex gap-4 flex-wrap">
-          <a onclick="handleClick('home')" class="hover:underline" href="#home" aria-label="Ir para a seção Início" tabindex="0">Início</a>
-          <a onclick="handleClick('sobre')" class="hover:underline" href="#sobre" aria-label="Ir para a seção Sobre" tabindex="0">Sobre</a>
-          <a onclick="handleClick('professores')" class="hover:underline" href="#professores" aria-label="Ir para a seção Professores" tabindex="0">Professores</a>
-          <a onclick="handleClick('parcerias')" class="hover:underline" href="#parcerias" aria-label="Ir para a seção Empresas parceiras" tabindex="0">Empresas parceiras</a>
-          <a onclick="handleClick('galeria')" class="hover:underline" href="#galeria" aria-label="Ir para a seção Fotos" tabindex="0">Fotos</a>
-          <a onclick="handleClick('contato')" class="hover:underline" href="#contato" aria-label="Ir para a seção Contato" tabindex="0">Contato</a>
+          <a
+            onclick="handleClick('home')"
+            class="hover:underline"
+            href="#home"
+            aria-label="Ir para a seção Início"
+            tabindex="0"
+            >Início</a
+          >
+          <a
+            onclick="handleClick('sobre')"
+            class="hover:underline"
+            href="#sobre"
+            aria-label="Ir para a seção Sobre"
+            tabindex="0"
+            >Sobre</a
+          >
+          <a
+            onclick="handleClick('professores')"
+            class="hover:underline"
+            href="#professores"
+            aria-label="Ir para a seção Professores"
+            tabindex="0"
+            >Professores</a
+          >
+          <a
+            onclick="handleClick('parcerias')"
+            class="hover:underline"
+            href="#parcerias"
+            aria-label="Ir para a seção Empresas parceiras"
+            tabindex="0"
+            >Empresas parceiras</a
+          >
+          <a
+            onclick="handleClick('galeria')"
+            class="hover:underline"
+            href="#galeria"
+            aria-label="Ir para a seção Fotos"
+            tabindex="0"
+            >Fotos</a
+          >
+          <a
+            onclick="handleClick('contato')"
+            class="hover:underline"
+            href="#contato"
+            aria-label="Ir para a seção Contato"
+            tabindex="0"
+            >Contato</a
+          >
         </div>
-        <select id="nav-select" class="block md:hidden px-2 py-1 rounded-lg" onchange="handleSelectChange(this)">
+        <select
+          id="nav-select"
+          class="block md:hidden px-2 py-1 rounded-lg"
+          onchange="handleSelectChange(this)"
+        >
           <option value="#home">Início</option>
           <option value="#sobre">Sobre</option>
           <option value="#professores">Professores</option>
@@ -492,7 +538,8 @@
 
       <section id="galeria" class="container mx-auto">
         <h2 class="text-3xl font-bold text-blue-950">Galeria de fotos</h2>
-        <span class="text-gray-700 flex items-center gap-2">Clique nas imagens para ampliá-las
+        <span class="text-gray-700 flex items-center gap-2"
+          >Clique nas imagens para ampliá-las
 
           <img
             src="assets/toque.png"
@@ -585,6 +632,31 @@
           </a>
         </div>
       </div>
+
+      <section id="videos" class="container mx-auto">
+        <div class="flex flex-col md:flex-row gap-4">
+          <iframe
+            height="250"
+            class="flex-1"
+            src="https://www.youtube.com/embed/jgJbxOriK7Q?si=2pGIx1u3Ni2HVR6F&cc_load_policy=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+      
+          <iframe
+            class="flex-1"
+            src="https://www.youtube.com/embed/cbw993m_fRw?si=BVpwgFhyStp3hEWA&cc_load_policy=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
 
       <section
         id="contato"
