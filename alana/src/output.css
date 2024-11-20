@@ -1273,6 +1273,10 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .md\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {

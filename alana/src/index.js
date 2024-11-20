@@ -10,6 +10,10 @@ function handleClick(sectionId) {
   });
 }
 
+function handleSelectChange(select) {
+  window.location.href = select.value;
+}
+
 function getPathAfterAssets(url) {
   const assetsIndex = url.indexOf("assets");
 

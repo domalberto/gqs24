@@ -20,58 +20,23 @@
         class="logo w-20 md:w-28"
         aria-label="Logo da Faculdade Dom Alberto"
       />
-      <nav
-        class="text-blue-950 gap-4 flex flex-wrap font-semibold"
-        aria-label="Navegação principal"
-      >
-        <a
-          onclick="handleClick('home')"
-          class="hover:underline"
-          href="#home"
-          aria-label="Ir para a seção Início"
-          tabindex="0"
-          >Início</a
-        >
-        <a
-          onclick="handleClick('sobre')"
-          class="hover:underline"
-          href="#sobre"
-          aria-label="Ir para a seção Sobre"
-          tabindex="0"
-          >Sobre</a
-        >
-        <a
-          onclick="handleClick('professores')"
-          class="hover:underline"
-          href="#professores"
-          aria-label="Ir para a seção Professores"
-          tabindex="0"
-          >Professores</a
-        >
-        <a
-          onclick="handleClick('parcerias')"
-          class="hover:underline"
-          href="#parcerias"
-          aria-label="Ir para a seção Empresas parceiras"
-          tabindex="0"
-          >Empresas parceiras</a
-        >
-        <a
-          onclick="handleClick('galeria')"
-          class="hover:underline"
-          href="#galeria"
-          aria-label="Ir para a seção Fotos"
-          tabindex="0"
-          >Fotos</a
-        >
-        <a
-          onclick="handleClick('contato')"
-          class="hover:underline"
-          href="#contato"
-          aria-label="Ir para a seção Contato"
-          tabindex="0"
-          >Contato</a
-        >
+      <nav class="text-blue-950 font-semibold" aria-label="Navegação principal">
+        <div id="nav-links" class="hidden md:flex gap-4 flex-wrap">
+          <a onclick="handleClick('home')" class="hover:underline" href="#home" aria-label="Ir para a seção Início" tabindex="0">Início</a>
+          <a onclick="handleClick('sobre')" class="hover:underline" href="#sobre" aria-label="Ir para a seção Sobre" tabindex="0">Sobre</a>
+          <a onclick="handleClick('professores')" class="hover:underline" href="#professores" aria-label="Ir para a seção Professores" tabindex="0">Professores</a>
+          <a onclick="handleClick('parcerias')" class="hover:underline" href="#parcerias" aria-label="Ir para a seção Empresas parceiras" tabindex="0">Empresas parceiras</a>
+          <a onclick="handleClick('galeria')" class="hover:underline" href="#galeria" aria-label="Ir para a seção Fotos" tabindex="0">Fotos</a>
+          <a onclick="handleClick('contato')" class="hover:underline" href="#contato" aria-label="Ir para a seção Contato" tabindex="0">Contato</a>
+        </div>
+        <select id="nav-select" class="block md:hidden px-2 py-1 rounded-lg" onchange="handleSelectChange(this)">
+          <option value="#home">Início</option>
+          <option value="#sobre">Sobre</option>
+          <option value="#professores">Professores</option>
+          <option value="#parcerias">Empresas parceiras</option>
+          <option value="#galeria">Fotos</option>
+          <option value="#contato">Contato</option>
+        </select>
       </nav>
     </header>
 
