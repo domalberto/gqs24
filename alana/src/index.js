@@ -66,7 +66,10 @@ const images = [
     alt: "Alunos participam de uma conversa com profissionais da área",
   },
   { src: "assets/galeria/e-get.jpg", alt: "Palestra com o CEO da E-get" },
-  { src: "assets/galeria/palestras.jpg", alt: "Alunos e profissionais da área durante semana acadêmica" },
+  {
+    src: "assets/galeria/palestras.jpg",
+    alt: "Alunos e profissionais da área durante semana acadêmica",
+  },
 ];
 
 const gallery = document.getElementById("gallery");
@@ -154,4 +157,33 @@ next.addEventListener("click", () => {
 
 prev.addEventListener("click", () => {
   showPreviousImage();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+  const navSelect = document.getElementById("nav-select");
+
+  function highlightNav() {
+    let index = sections.length;
+
+    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+    navLinks.forEach((link) =>
+      link.classList.remove("bg-yellow-500", "text-white", "px-1", "rounded-lg")
+    );
+    navLinks[index].classList.add(
+      "bg-yellow-500",
+      "text-white",
+      "px-1",
+      "rounded-lg"
+    );
+
+    if (navSelect && sections[index].id) {
+      navSelect.value = `#${sections[index].id}`;
+    }
+  }
+
+  highlightNav();
+  window.addEventListener("scroll", highlightNav);
 });
