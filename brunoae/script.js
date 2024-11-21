@@ -1,17 +1,37 @@
 const aumentarFonte = document.getElementById('aumentar-fonte');
 const diminuirFonte = document.getElementById('diminuir-fonte');
-const corpo = document.body;
-
-let tamanhoFonte = 16;
+const todosElementos = document.querySelectorAll('*');
 
 aumentarFonte.addEventListener('click', () => {
-  tamanhoFonte += 2;
-  corpo.style.fontSize = `${tamanhoFonte}px`;
+  todosElementos.forEach(elemento => {
+    let style = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+    let currentSize = parseFloat(style);
+    elemento.style.fontSize = `${currentSize * 1.1}px`; // aumenta em 10%
+  });
 });
 
 diminuirFonte.addEventListener('click', () => {
-  if (tamanhoFonte > 10) {
-    tamanhoFonte -= 2;
-    corpo.style.fontSize = `${tamanhoFonte}px`;
-  }
+  todosElementos.forEach(elemento => {
+    let style = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+    let currentSize = parseFloat(style);
+    elemento.style.fontSize = `${currentSize / 1.1}px`; // diminui em 10%
+  });
 });
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+
+  $('.carousel').carousel({
+    interval: 15000 // Intervalo em milissegundos
+  });
+

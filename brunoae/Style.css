@@ -1,171 +1,179 @@
-body{
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    background: #eee;
-    font-size: 16px;
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background: #eee;
+  font-size: var(--font-size);
+  overflow-x: hidden;
 }
 
+
 #aumentar-fonte, #diminuir-fonte, #opc {
-    color: #000; /* cor do texto */
-    background-color: #007bff; /* cor de fundo */
-    border: none; /* sem borda */
-    padding: 5px 10px; /* espaçamento interno */
-    font-size: 16px; /* tamanho da fonte */
-    cursor: pointer; /* cursor de ponteiro */
-    position: relative; /* posição relativa */
-    top: 10px; /* distância do topo */
-    left: 20px; /* distância da esquerda */
-  }
-  
-  #aumentar-fonte:hover, #diminuir-fonte:hover, #opc:hover {
-    background-color: #0056b3; /* cor de fundo ao passar o mouse */
-  }
+  color: #000;
+  background-color: #007bff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+#aumentar-fonte:hover, #diminuir-fonte:hover, #opc:hover {
+  background-color: #0056b3;
+}
 
 .nav-item{
-    font-size: 1.1em;
-    margin: 0 5px 0 5px;
-    color: #000;
+  font-size: 17.6px;
+  margin: 0 5px 0 5px;
+  color: #000;
+  border-radius: 15px;
 }
 
 .navbar-brand{
-    font-size: 1.5em;
+  font-size: 24px;
 }
 
 .navbar-brand i{
-    font-size: 1.8em;
+  font-size: 28.8px;
 }
 
 .navbar{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
 
 .landing {
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 200px 20px 200px 20px;
-    background-image: linear-gradient(to right, #0e3b50 0%, #0e3b50 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), linear-gradient(to left, #0e3b50 0%, #0e3b50 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), url('midias/fundo3.jpg');
-    background-size: cover;
-    background-position: center; /* centraliza a imagem */ /* opcional, para definir a altura da div */
-    border: 10px solid #000;
-    text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 200px 20px 200px 20px;
+  background-image: linear-gradient(to right, #0e3b50 0%, #0e3b50 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), linear-gradient(to left, #0e3b50 0%, #0e3b50 5%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), url('midias/fundo3.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 10px solid #000;
+  text-align: center;
 }
 
-#btn-getConnected{
-    border-radius: 0%;
-    font-weight: bold;
+#btn-getConnected {
+  border-radius: 25px; 
+  font-weight: bold;
 }
 
 #btn-getConnected:hover {
-    transform: scale(1.2);
-    background-color: #007bff;
-    color: #ffffff;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    font-weight: bolder;
-  }
+  transform: scale(1.2);
+  background-color: #007bff;
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-weight: bolder;
+}
+
 
 #h1-welcome{
-    text-transform: uppercase;
-    font-weight: 400;
-    background-color: rgba(255, 255, 255, 0.66);
-    color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.66);
+  color: #000;
+  border-radius: 15px; 
+  padding: 10px; 
+  display: inline-block;
 }
 
 #p-welcome{
-    margin-bottom: 100px;
-    background-color: rgba(255, 255, 255, 0.66);
-    color: #000;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.66);
+  color: #000;
+  border-radius: 16px; 
+  padding: 10px; 
+  display: inline-block;
 }
 
 #connect-title{
-    margin: 50px 0 20px 0;
+  margin: 50px 0 20px 0;
 }
 
 #social i{
-    margin: 30px 25px 10px 25px;
-    font-size: 3.8em;
-    color: rgb(182, 182, 182);
+  margin: 30px 25px 10px 25px;
+  font-size: 60.8px;
+  color: rgb(182, 182, 182);
 }
 
 .techImages{
-    max-height: 350px;
-    max-width: 100%;
-    padding: 10px;
+  max-height: 350px;
+  max-width: 100%;
+  padding: 10px;
 }
 
 .techImagesDiv{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .title{
-    margin: 70px 0 25px 0;
+  margin: 70px 0 25px 0;
 }
 
 #sobre p {
-    text-align: justify;
-    text-justify: inter-word;
-  }
+  text-align: justify;
+  text-justify: inter-word;
+}
 
-/* Adicione o seguinte código ao seu arquivo Style.css */
 #carouselProfessores {
-    width: 100%; /* Ocupa toda a largura da página */
-    margin: 0; /* Remove a margem */
-    padding: 0; /* Remove o padding */
-  }
-  
-  .carousel-inner {
-    width: 100%; /* Ocupa toda a largura da página */
-    height: 32vh; /* Ocupa toda a altura da página */
-    display: flex; /* Faz com que o conteúdo seja exibido lado a lado */
-    flex-wrap: wrap; /* Permite que o conteúdo seja exibido em várias linhas */
-  }
-  
-  .carousel-item {
-    width: 95%; /* Ocupa toda a largura da página */
- 
-    background-color: #fff; /* Adicione um fundo branco */
-    display: flex; /* Faz com que o conteúdo seja exibido lado a lado */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    padding: 0; /* Remove a borda */
-    margin: 0; /* Remove a margem */
-  }
-  
-  .carousel-item .row {
-    width: 100%; /* Ocupa toda a largura da página */
-    height: 10%; /* Ocupa toda a altura da página */
-    display: flex; /* Faz com que o conteúdo seja exibido lado a lado */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-  }
-  
-  .carousel-item .row .col-md-4 img {
-    width: 100%; /* Ocupa toda a largura do container */
-    height: auto; /* Mantém a altura original da imagem */
-    object-fit: contain; /* Exibe a imagem em seu tamanho original */
-    max-height: 200px; /* Define a altura máxima do container */
-  }
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  .carousel-control-prev, .carousel-control-next {
-    background-color: transparent; /* Fundo transparente */
-    border: none; /* Sem borda */
-    width: 10px; /* Largura da seta */
-    height: 30px; /* Altura da seta */
-  }
-  
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-  }
-  
-  .carousel-control-prev-icon {
-    transform: rotate(180deg); /* Corrige a direção da seta da esquerda */
-  }
+.carousel-inner {
+  width: 100%;
+  height: 32vh;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .nome-professor {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
+.carousel-item {
+  width: 95%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
 
+.carousel-item .row {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item .row .col-md-4 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 200px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: transparent;
+  border: none;
+  width: 10px;
+  height: 30px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(180deg);
+}
+
+.nome-professor {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
