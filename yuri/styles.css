@@ -1,16 +1,16 @@
-@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap');
+
 /* Reset básico */
 body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   margin: 0;
   box-sizing: border-box;
-  display: block;
 }
 
 .header-mobile {
   display: none;
 }
 
-.header{
+.header {
   display: none;
 }
 
@@ -21,9 +21,8 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     flex-direction: column;
     justify-content: space-between; 
     align-items: flex-start; 
-    padding: 20px; /
+    padding: 20px;
   }
-  
 
   #LogoDom {
     float: left; 
@@ -38,16 +37,15 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     margin-top: 20px;
   }
 
-  h2{
+  h2 {
     text-align: center;
   }
   
   /* Estilos gerais */
   body {
     background-color: #f4f4f4;
-    font-family: "Kanit", sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-weight: 400;
-    font-style: normal;
   }
   
   .container {
@@ -66,47 +64,45 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     padding: 10px;
     max-width: 1200px;
     margin-right: 2%;
-}
+  }
 
-  /* menu dropdown NÃO ESTÁ sendo utilizado atualmente */
-.dropdown { 
+  .dropdown { 
     position: relative;
-}
+  }
 
-.menu-button {
+  .menu-button {
     cursor: pointer; 
-}
+  }
 
-.dropdown-content {
+  .dropdown-content {
     display: none; 
     position: absolute; 
     background-color: #f4f4f4;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     z-index: 1; 
-}
+  }
 
-.dropdown-content ul {
+  .dropdown-content ul {
     list-style-type: none;
     padding: 0; 
-}
+  }
 
-.dropdown-content li {
+  .dropdown-content li {
     padding: 8px 12px;
-}
+  }
 
-.dropdown-content li a {
+  .dropdown-content li a {
     color: #0359b4; 
     text-decoration: none; 
-}
+  }
 
-.dropdown-content li a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
-}
+  .dropdown-content li a:hover {
+    text-decoration: underline; 
+  }
 
-/* Exibe o menu dropdown quando ativado */
-.show {
+  .show {
     display: block;
-}
+  }
 
   .banner-text {
     position: absolute;
@@ -132,142 +128,137 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     width: 80%; 
     margin-left: 0; 
     margin-right: auto; 
-}
+  }
   
   form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
   }
 }
 
-@media (min-width: 768px)
-{
+@media (min-width: 768px) {
 
-section {
+  section {
     display: flex; 
     flex-direction: row;
     justify-content: space-between; 
     align-items: flex-start; 
-    padding: 20px; /
-}
+    padding: 20px;
+  }
 
+  h1 {
+    font-size: 3em; 
+    text-align: center;
+  }
 
-h1 {
-  font-size: 3em; 
-  text-align: center;
-}
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
 
-h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
+  /* Estilos gerais */
+  body {
+    background-color: #f4f4f4;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+  }
 
-/* Estilos gerais */
-body {
-  background-color: #f4f4f4;
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px;
+  }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 35px;
-}
+  /* Cabeçalho */
 
-/* Cabeçalho */
+  #LogoDom {
+    width: 55px;
+    height: 55px;
+    float: left; 
+    margin-left: 15px; 
+  }
 
-#LogoDom{
-  width: 55px;
-  height: 55px;
-  float: left; 
-  margin-left: 15px; 
-}
+  .header-mobile {
+    display: none;
+  }
 
-.header-mobile {
-  display: none;
-}
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    color: #0359b4;
+    padding: 5px;
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  background: #f4f4f4;
-  color: #0359b4;
-  padding: 5px;
-}
+  nav {
+    margin: auto;
+  }
 
-nav {
-  margin: auto;
-}
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
+  nav li {
+    margin: 10px;
+    justify-content: space-between;
+  }
 
-nav li {
-  margin: 10px;
-  justify-content: space-between;
-}
+  nav a {
+    color: #0359b4;
+    text-decoration: none;
+  }
 
-nav a {
-  color: #0359b4;
-  text-decoration: none;
-}
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-nav a:hover {
-  text-decoration: underline;
-}
+  /* Seções */
 
-/* Seções */
+  .fade-img {
+    position: relative; 
+  }
 
-.fade-img {
-  position: relative; 
-}
+  .fade-img:after {
+    content: ""; 
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #f4f4f4 100%);
+    height: 35%;  
+  }
 
-.fade-img:after {
-  content: ""; 
-  position: absolute; 
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #f4f4f4 100%);
-  height: 35%;  
-}
-
-
-.banner {
+  .banner {
     position: relative;
-}
+  }
 
-.banner-text {
+  .banner-text {
     position: absolute;
     top: 5%;
     left: 2%; 
     padding: 20px;
     border-radius: 12px; 
     color: black; 
+  }
+
+  .sobre {
+    position: absolute;
+    top: 25%;
+    left: 2%; 
+    margin-right: 65%;
+    padding: 20px;
+    border-radius: 12px; 
+    color: black; 
+    text-align: justify;
+    font-size: 22px;
+  }
 
 }
 
-.sobre {
-  position: absolute;
-  top: 25%;
-  left: 2%; 
-  margin-right: 65%;
-  padding: 20px;
-  border-radius: 12px; 
-  color: black; 
-  text-align: justify;
-  font-size: 22px;
-}
-
-}
-/* Estilo para a imagem no topo de cada benefício */
 .beneficio-imagem {
   max-width: 100%; 
   height: auto; 
@@ -275,8 +266,6 @@ nav a:hover {
   margin-bottom: 2%;
 }
 
-
-/* Estilo para a seção de benefícios */
 .beneficios {
   display: flex;
   justify-content: space-around; 
@@ -285,7 +274,6 @@ nav a:hover {
   margin-bottom: 1%;
 }
 
-/* Estilo para cada benefício individual */
 .beneficio {
   flex: 1; 
   margin: 10px; 
@@ -297,51 +285,41 @@ nav a:hover {
   margin-bottom: 3%;
 }
 
-/* Estilo para os títulos e parágrafos nos benefícios */
 .beneficio h3 {
-  font-size: 1.2em; /* Aumenta o tamanho da fonte do título */
+  font-size: 1.2em;
 }
 
 .beneficio p {
-  font-size: 1em; /* Aumenta o tamanho da fonte do parágrafo */
+  font-size: 1em;
 }
 
-/* Estilo para a imagem do depoimento */
-.foto-depoimento {
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; /* Mantém a imagem circular */
-  margin-right: 15px; 
-  float: left; /* Faz com que a imagem flutue à esquerda do texto */
-}
 
-/* Estilo para cada depoimento individual */
 .depoimentos h1 {
   margin-top: 15px;
 }
 
 .depoimentos {
-  width: 45%; 
+  width: 60%; 
+  background-color: rgba(240, 248, 255, 0.8); 
+  border-radius: 8px; 
+  margin: 0 auto;
 }
 
 .depoimento {
   margin-top: 15px;
   margin-bottom: 15px; 
   padding: 15px;
-  border-left: 4px solid #007BFF; 
-  background-color: #f0f8ff;
-  border-radius: 60px; 
-  width: 35vh;
+  background-color: #f0f8ff; 
+  border-radius: 4px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .depoimento-texto {
-  overflow: hidden; /* Garante que o texto não transborde o container */
+  overflow: hidden; 
 }
 
-/* Formulário de Contato */
-
 .formulario {
-  width: 35%; /* Define a largura da seção do formulário */
+  width: 40%; 
 }
 
 form {
@@ -362,21 +340,17 @@ button {
   color: white;
   border: none;
   border-radius: 4px;
-  margin-left:10%;
-  margin-right: 10%;
 }
 
 button:hover {
-  background: #044993; /* Cor do botão ao passar o mouse */
+  background: #044993; 
 }
 
-/* Rodapé */
 footer {
   margin-top: 2%;
   background-color: #0359b4;
   color: white;
   padding: 20px;
   text-align: center;
-  word-spacing: 2px; /* Aumenta o espaçamento entre as palavras */
+  word-spacing: 2px; 
 }
-
