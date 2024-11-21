@@ -260,8 +260,9 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
 }
 
 .beneficio-imagem {
-  max-width: 100%; 
-  height: auto; 
+  width: 400px;
+  height: 250px; 
+  object-fit: cover; 
   border-radius: 10px; 
   margin-bottom: 2%;
 }
@@ -299,10 +300,10 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
 }
 
 .depoimentos {
-  width: 60%; 
-  background-color: rgba(240, 248, 255, 0.8); 
+  width: 45%; 
+  background-color: #f9f9f9; 
   border-radius: 8px; 
-  margin: 0 auto;
+  margin-left: 2%;
 }
 
 .depoimento {
