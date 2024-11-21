@@ -1,125 +1,357 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Engenharia da Computação</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+  margin: 0;
+  box-sizing: border-box;
+}
 
-<body>
+.header-mobile {
+  display: none;
+}
 
-    <header class="header">
-        <img id="LogoDom" src="images/FDA_Logo_small.png" alt="Logo Faculdade Dom Alberto">
-        <nav>
-            <ul>
-                <li><a href="https://domalberto.edu.br/">Home</a></li>
-                <li><a href="https://domalberto.edu.br/cursos/">Cursos</a></li>
-                <li><a href="https://domalberto.edu.br/vestibular/">Vestibular</a></li>
-                <li><a href="https://domalberto.edu.br/contato/">Contato</a></li>
-            </ul>
-        </nav>
-        <button style="margin-right: 2%;">Portal do Aluno</button>
-    </header>
+.header {
+  display: none;
+}
 
-    <header class="header-mobile">
-        <img id="LogoDom" src="images/FDA_Logo_small.png" alt="Logo Faculdade Dom Alberto" style="margin-left: 2%; margin-right: auto; width: 30px; height: 30px;">
-        <div class="dropdown">
-            <img src="images/noun-menu-568033.png" alt="Menu" class="menu-button" id="menuButton" style="width: 25px; height: 25px; margin-right: 3%;">
-            <nav id="dropdownMenu" class="dropdown-content">
-                <ul>
-                    <li><a href="https://domalberto.edu.br/">Home</a></li>
-                    <li><a href="https://domalberto.edu.br/cursos/">Cursos</a></li>
-                    <li><a href="https://domalberto.edu.br/vestibular/">Vestibular</a></li>
-                    <li><a href="https://domalberto.edu.br/contato/">Contato</a></li>
-                    <li><a href="https://domalberto.edu.br/portal-do-aluno/">Portal do Aluno</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+@media (max-width:768px) {
 
-    <main>
-        <div class="banner">
-            <div class="fade-img">
-                <img src="images/sahand-babali-gavODTHG36Y-unsplash.jpg" alt="Imagem de fundo de um Arduino Uno com alguns componentes eletrônicos"
-                    style="height:100vh; width: 100%; object-fit: cover; box-sizing: border-box;">
-                <div class="banner-text">
-                    <h1>Engenharia da Computação</h1>
-                    <p>Graduação Presencial | 4240h</p>
-                </div>
-                <div class="sobre">
-                    <p>O curso de Engenharia da Computação oferece uma formação completa, com foco em desenvolvimento de
-                        software, hardware e sistemas computacionais. Prepare-se para os desafios do mercado de trabalho com uma
-                        grade curricular atualizada e professores experientes.</p>
-                </div>
-            </div>
-        </div>
+  section {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;
+  }
 
-        <h2 style="text-align: center;">Benefícios do Curso</h2>
-        <section>
-            <div class="beneficios">
-                <div class="beneficio">
-                    <img src="images/Pratica.jpeg" alt="Imagem da turma de " class="beneficio-imagem">
-                    <h3>Atividades Práticas</h3>
-                    <p>Aprenda com projetos práticos e experiências reais.</p>
-                </div>
-                <div class="beneficio">
-                    <img src="images/Palestra.jpeg" alt="Imagem de pessoas conversando enquanto estudam" class="beneficio-imagem">
-                    <h3>Networking</h3>
-                    <p>Aprenda e converse com profissionais de diversos ramos da tecnologia.</p>
-                </div>
-                <div class="beneficio">
-                    <img src="images/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="Imagem de um grupo de formandos" class="beneficio-imagem">
-                    <h3>Certificação Reconhecida</h3>
-                    <p>Receba um diploma reconhecido pelo mercado de trabalho.</p>
-                </div>
-            </div>
-        </section>
+  #LogoDom {
+    float: left; 
+    margin-right: 10px; 
+    width: 20px;
+    height: 20px;
+  }
 
-        <section>
-            <div class="depoimentos">
-                <h2 style="margin-left: 3%;">Depoimentos dos Alunos</h2>
-                <article class="depoimento">
-                    <div class="depoimento-texto">
-                        <p>"Top 10 cursos."</p>
-                        <p>     - Yuri, Aluno </p>
-                    </div>
-                </article>
-                <article class="depoimento">
-                    <div class="depoimento-texto">
-                        <p>"É fazer o Luiz se distanciar do assunto da aula com uma boa conversa."</p>
-                        <p>     - Christian, Aluno</p>
-                    </div>
-                </article>
-                <article class="depoimento">
-                    <div class="depoimento-texto">
-                        <p>"Entrei no curso sem saber nada, agora no final do curso tenho certeza que continuo igual o começo."</p>
-                        <p>     - Bruno Durigon, Aluno</p>
-                    </div>
-                </article>
-            </div>
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
 
-            <div class="formulario">
-                <h2>Entre em Contato</h2>
-                <form action="submit_form" method="post">
-                    <input type="text" name="name" placeholder="Seu Nome" required>
-                    <input type="email" name="email" placeholder="Seu Email" required>
-                    <textarea name="message" rows="4" placeholder="Sua Mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
+  h2 {
+    text-align: center;
+  }
+  
+  /* Estilos gerais */
+  body {
+    background-color: #f4f4f4;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  /* Cabeçalho */
+  .header-mobile {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: #f4f4f4;
+    color: #0359b4;
+    padding: 10px;
+    max-width: 1200px;
+    margin-right: 2%;
+  }
 
-    <footer>
-        <p>Email: dom@domalberto.edu.br Telefone: 0800 006 6370 Endereço: Rua Ramiro Barcelos, nº 892 - Centro, Santa Cruz do Sul - RS</p>
-    </footer>
+  .dropdown { 
+    position: relative;
+  }
 
-</body>
+  .menu-button {
+    cursor: pointer; 
+  }
 
-</html>
+  .dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #f4f4f4;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
+  }
+
+  .dropdown-content ul {
+    list-style-type: none;
+    padding: 0; 
+  }
+
+  .dropdown-content li {
+    padding: 8px 12px;
+  }
+
+  .dropdown-content li a {
+    color: #0359b4; 
+    text-decoration: none; 
+  }
+
+  .dropdown-content li a:hover {
+    text-decoration: underline; 
+  }
+
+  .show {
+    display: block;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 4%;
+    left: 2%; 
+    padding: 10px;
+    border-radius: 8px; 
+    color: black; 
+  }
+  
+  .sobre {
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    padding: 10px;
+    border-radius: 12px;
+    color: black;
+    text-align: justify;
+    font-weight: 500;
+  }
+
+  .formulario {
+    width: 80%; 
+    margin-left: 0; 
+    margin-right: auto; 
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  section {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 3em; 
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  /* Estilos gerais */
+  body {
+    background-color: #f4f4f4;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px;
+  }
+
+  /* Cabeçalho */
+
+  #LogoDom {
+    width: 55px;
+    height: 55px;
+    float: left; 
+    margin-left: 15px; 
+  }
+
+  .header-mobile {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    color: #0359b4;
+    padding: 5px;
+  }
+
+  nav {
+    margin: auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  nav li {
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  nav a {
+    color: #0359b4;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Seções */
+
+  .fade-img {
+    position: relative; 
+  }
+
+  .fade-img:after {
+    content: ""; 
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #f4f4f4 100%);
+    height: 35%;  
+  }
+
+  .banner {
+    position: relative;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 5%;
+    left: 2%; 
+    padding: 20px;
+    border-radius: 12px; 
+    color: black; 
+  }
+
+  .sobre {
+    position: absolute;
+    top: 25%;
+    left: 2%; 
+    margin-right: 65%;
+    padding: 20px;
+    border-radius: 12px; 
+    color: black; 
+    text-align: justify;
+    font-size: 22px;
+  }
+
+}
+
+.beneficio-imagem {
+  width: 400px;
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  margin-bottom: 2%;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%; 
+  flex-wrap: wrap;
+  margin-bottom: 1%;
+}
+
+.beneficio {
+  flex: 1; 
+  margin: 10px; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  background-color: #f9f9f9; 
+  text-align: center; 
+  margin-bottom: 3%;
+}
+
+.beneficio h3 {
+  font-size: 1.2em;
+}
+
+.beneficio p {
+  font-size: 1em;
+}
+
+
+.depoimentos h1 {
+  margin-top: 15px;
+}
+
+.depoimentos {
+  width: 45%; 
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  margin-left: 2%;
+}
+
+.depoimento {
+  margin-top: 15px;
+  margin-bottom: 15px; 
+  padding: 15px;
+  background-color: #f0f8ff; 
+  border-radius: 4px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.depoimento-texto {
+  overflow: hidden; 
+}
+
+.formulario {
+  width: 40%; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background: #0359b4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #044993; 
+}
+
+footer {
+  margin-top: 2%;
+  background-color: #0359b4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  word-spacing: 2px; 
+}
