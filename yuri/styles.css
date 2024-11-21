@@ -135,6 +135,35 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     flex-direction: column;
     width: 100%;
   }
+
+  .beneficio-imagem {
+    width: 90%;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-bottom: 2%;
+  }
+
+  .formulario {
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+  }
+
+  form {
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .depoimentos { 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -257,15 +286,32 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     font-size: 22px;
   }
 
+  .beneficio-imagem {
+    width: 400px;
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-bottom: 2%;
+  }
+
+  .formulario {
+    width: 40%; 
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .depoimentos {
+    width: 45%; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    margin-left: 2%;
+  }
+
 }
 
-.beneficio-imagem {
-  width: 400px;
-  height: 250px; 
-  object-fit: cover; 
-  border-radius: 10px; 
-  margin-bottom: 2%;
-}
 
 .beneficios {
   display: flex;
@@ -299,13 +345,6 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   margin-top: 15px;
 }
 
-.depoimentos {
-  width: 45%; 
-  background-color: #f9f9f9; 
-  border-radius: 8px; 
-  margin-left: 2%;
-}
-
 .depoimento {
   margin-top: 15px;
   margin-bottom: 15px; 
@@ -317,15 +356,6 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
 
 .depoimento-texto {
   overflow: hidden; 
-}
-
-.formulario {
-  width: 40%; 
-}
-
-form {
-  display: flex;
-  flex-direction: column;
 }
 
 input, textarea {
