@@ -122,13 +122,15 @@
     <form id="applyForm" onsubmit="return handleSubmit(event)">
         <label for="name">Nome Completo:</label>
         <input type="text" id="name" name="name" required>
+		placeholder="Insira seu nome (ex: Adalberto Pitanga)" required>
 
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
+		placeholder="Insira seu email (ex: nome@dominio.com)" required>
 
         <label for="phone">Telefone:</label>
         <input type="tel" id="phone" name="phone" pattern="\d{11}" 
-               placeholder="DDDNúmero (ex: 11987654321)" required>
+                placeholder="DDD Número (ex: 11987654321)" required>
 
         <button type="submit">Enviar</button>
     </form>
