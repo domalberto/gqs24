@@ -8,7 +8,7 @@ body {
 }
 
 /* Estilizando a section principal */
-section {
+main {
     max-width: 60%; /* Ocupa 60% da tela, com 20% de margem de cada lado */
     margin-left: auto;
     margin-right: auto;
