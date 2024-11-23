@@ -1,0 +1,502 @@
+/* ================================
+   Estilos Globais
+   ================================ */
+   body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão para o corpo do texto */
+    background: #0f0c29; /* Cor de fundo escura */
+    color: #e0e0e0; /* Cor do texto clara para contraste */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+    padding-bottom: 60px; /* Espaçamento adicional para o rodapé */
+}
+
+/* ================================
+   Cabeçalho
+   ================================ */
+.header {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e); /* Gradiente de cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #4CAF50; /* Linha inferior verde futurista */
+    animation: slideDown 0.5s ease-out; /* Animação de deslizamento ao carregar */
+}
+
+/* Navegação */
+.nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha */
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.nav ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s; /* Transição suave da cor ao passar o mouse */
+}
+
+/* ================================
+   Seção Principal
+   ================================ */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente para um efeito futurista */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    animation: fadeIn 1s ease-in; /* Animação de desvanecimento ao carregar */
+}
+
+.hero h2 {
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.hero p {
+    font-size: 1.2em; /* Tamanho da fonte do texto */
+}
+
+/* iframe */
+.content-frame {
+    width: 100%;
+    height: calc(100vh - 200px); /* Ajuste conforme o tamanho do cabeçalho e rodapé */
+    border: none; /* Remove a borda do iframe */
+}
+
+/* ================================
+   Seções
+   ================================ */
+.section {
+    padding: 20px;
+    margin: 10px;
+    background: #1a1a2e; /* Fundo escuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    animation: slideDown 0.8s ease-out; /* Animação de deslizamento ao carregar */
+}
+
+/* Sobre o Curso */
+.about {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    animation: fadeIn 1s ease-in; /* Animação de desvanecimento ao carregar */
+}
+
+.about ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.about li {
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
+}
+
+/* ================================
+   Tabelas
+   ================================ */
+.curriculum-container {
+    max-height: 500px; /* Altura máxima para o container da tabela */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    padding: 20px;
+    border: 1px solid #4CAF50; /* Borda verde futurista */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    margin: 20px auto;
+    width: 80%; /* Largura ajustada para centralizar */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    animation: fadeIn 1s ease-in; /* Animação de desvanecimento ao carregar */
+}
+
+.curriculum-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaçamentos entre bordas das células */
+    transition: transform 0.3s ease-in-out; /* Transição suave para transformação */
+}
+
+.curriculum-table, .curriculum-table th, .curriculum-table td {
+    border: 1px solid #4CAF50; /* Borda verde futurista */
+}
+
+.curriculum-table th, .curriculum-table td {
+    padding: 12px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    color: #e0e0e0; /* Texto claro */
+}
+
+.curriculum-table th {
+    background-color: #24243e; /* Fundo escuro para o cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+.curriculum-table tr:nth-child(even) {
+    background-color: #1a1a2e; /* Fundo escuro alternado para linhas pares */
+}
+
+.curriculum-table tr:hover {
+    background-color: #4CAF50; /* Efeito de hover em verde futurista */
+    transform: scale(1.02); /* Aumenta a tabela ao passar o mouse */
+}
+
+/* ================================
+   Formulário de Contato
+   ================================ */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    animation: fadeIn 1s ease-in; /* Animação de desvanecimento ao carregar */
+}
+
+.contact-form label {
+    margin-bottom: 5px; /* Espaçamento abaixo dos rótulos */
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px; /* Espaçamento abaixo dos campos */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Borda clara */
+    background: #1a1a2e; /* Fundo escuro dos campos */
+    color: #e0e0e0; /* Texto claro dos campos */
+}
+
+.contact-form button {
+    background: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background 0.3s, transform 0.3s; /* Transição suave para hover */
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form button:hover {
+    background: #45a049; /* Cor de fundo do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+.contact-form button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: transform 0.5s ease-out;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.contact-form button:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* ================================
+   Rodapé
+   ================================ */
+.footer {
+    background: #24243e; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    padding: 4px 8px; /* Reduz o tamanho do rodapé */
+    font-size: 0.8em; /* Reduz o tamanho da fonte */
+    width: 100%;
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0;
+    border-top: 2px solid #4CAF50; /* Linha superior verde futurista */
+    z-index: 1000; /* Garante que o rodapé fique acima do conteúdo */
+    transition: font-size 0.3s ease-in-out, padding 0.3s ease-in-out; /* Transição suave para tamanhos */
+}
+
+/* ================================
+   Imagem na Seção de Infraestrutura
+   ================================ */
+   .infra-section {
+    padding: 20px;
+    background: #1a1a2e; /* Cor de fundo da seção */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura e altura */
+}
+
+.infra-image-container {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.infra-image {
+    max-width: 80%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da altura da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para um efeito futurista */
+    transition: transform 0.5s ease-in-out; /* Transição suave para zoom */
+}
+
+.infra-image:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* ================================
+   Animações
+   ================================ */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ================================
+   Seção de Professores
+   ================================ */
+   .professor-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem e quebrem em várias linhas se necessário */
+    justify-content: space-around; /* Espaça os itens igualmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px;
+}
+
+.professor-item {
+    text-align: center;
+    width: 200px; /* Largura fixa para os itens */
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out; /* Animação de hover */
+}
+
+.professor-item img {
+    width: 100%; /* A largura da imagem será igual à do container */
+    border-radius: 50%; /* Imagens circulares */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.professor-item p {
+    color: #e0e0e0;
+}
+
+.professor-item:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Estilo para o modo de alto contraste */
+body.high-contrast {
+    background: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+
+body.high-contrast a {
+    color: #00ffff; /* Links em ciano */
+}
+
+body.high-contrast .header,
+body.high-contrast .footer {
+    background: #222; /* Fundo mais escuro para elementos */
+    border-color: #fff; /* Bordas brancas */
+}
+
+body.high-contrast button {
+    background: #fff; /* Botões com fundo branco */
+    color: #000; /* Texto em preto */
+    border: 1px solid #000; /* Borda preta */
+}
+
+/* Estilo do botão de contraste no canto superior direito */
+.contrast-icon {
+    position: fixed; /* Fixado na tela */
+    top: 15px; /* Distância do topo */
+    right: 15px; /* Distância da lateral direita */
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Indica que é clicável */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    width: 40px; /* Largura do ícone */
+    height: 40px; /* Altura do ícone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.contrast-icon:hover {
+    transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+.contrast-icon img {
+    width: 100%; /* Garante que o ícone ocupe o botão */
+    height: auto;
+    filter: invert(0); /* Ícone na cor normal */
+    transition: filter 0.3s ease;
+}
+
+body.high-contrast .contrast-icon img {
+    filter: invert(1); /* Altera a cor do ícone no modo de contraste */
+}
+
+/* Estilo para a imagem do boneco */
+.accessibility-icon {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Estilo para a aba de acessibilidade */
+.accessibility-info {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Começa fora da tela */
+    width: 300px;
+    height: 100%;
+    background-color: #24243e;
+    color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.accessibility-info.open {
+    right: 0; /* Quando a classe "open" é adicionada, a aba entra */
+}
+
+/* Estilo da aba de acessibilidade */
+.accessibility-info {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Começa fora da tela */
+    width: 300px;
+    height: 100%;
+    background-color: #24243e;
+    color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.accessibility-info.open {
+    right: 0; /* Quando a classe "open" é adicionada, a aba entra */
+}
+
+/* Estilo do ícone de acessibilidade */
+.accessibility-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: right 0.3s ease; /* Transição suave ao mover para a esquerda/direita */
+}
+
+.accessibility-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo da aba de acessibilidade */
+.accessibility-info {
+    position: fixed;
+    top: 0;
+    right: -320px; /* Começa fora da tela */
+    width: 300px; /* Largura ajustada para caber melhor o conteúdo */
+    height: auto;
+    background-color: #24243e;
+    color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: right 0.3s ease; /* Transição suave da aba */
+    z-index: 999;
+}
+
+.accessibility-info.open {
+    right: 0; /* Quando a classe "open" é adicionada, a aba entra */
+}
+
+.accessibility-info.open ~ .accessibility-icon {
+    right: 320px; /* Move o ícone de acessibilidade para a esquerda junto com a aba */
+}
+
+/* Estilo para os botões da aba de acessibilidade */
+#close-accessibility-info {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#close-accessibility-info:hover {
+    background-color: #45a049;
+}
+
+/* Estilo da lista de opções de acessibilidade */
+.accessibility-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.accessibility-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para o modo de escala de cinza */
+.gray-scale {
+    filter: grayscale(100%);
+}
+
+/* Estilo para o aumento de tamanho do texto */
+.large-text {
+    font-size: 1.25em; /* Aumenta o tamanho do texto em 25% */
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.project-image {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 15px; /* Espaçamento entre a imagem e o texto */
+    float: left; /* Para manter no canto esquerdo */
+    border-radius: 8px; /* (Opcional) Adiciona cantos arredondados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* (Opcional) Adiciona uma sombra */
+}
+
+.project h3 {
+    margin: 0; /* Remove a margem superior para alinhar melhor com a imagem */
+}
+
+.project p {
+    margin-top: 5px; /* Espaçamento entre o título e o parágrafo */
+}

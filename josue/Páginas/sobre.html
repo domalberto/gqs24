@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Curso</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="Saiba mais sobre o curso de Engenharia da Computação, incluindo currículo e corpo docente. Descubra como nossa formação prepara os alunos para desafios reais do mercado.">
+    <meta name="keywords" content="Sobre o curso, Engenharia da Computação, currículo, corpo docente, formação inovadora">
+    <meta name="author" content="Faculdade Dom Alberto">
+    <link rel="icon" href="/Recursos/Icones/Icone-hotsite.ico" type="image/x-icon"> <!-- Ícone da página -->
+
+     <!-- Link para o Font Awesome (para ícones) -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+     <!-- Estilos personalizados para os ícones -->
+     <style>
+         /* Tamanho e cor dos ícones */
+         .accessibility-option i {
+             color: white; /* Cor branca */
+             font-size: 16px; /* Tamanho reduzido dos ícones */
+             margin-right: 8px; /* Espaço entre o ícone e o texto */
+         }
+     </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre o Curso</a></li>
+                <li><a href="infraestrutura.html">Infraestrutura</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="admissao.html">Admissão e Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Ícone de acessibilidade -->
+        <div id="accessibility-icon" class="accessibility-icon">
+            <img src="../Recursos/Imagens/acessibilidade.png" alt="Acessibilidade">
+        </div>
+    </header>
+
+    <!-- Aba de acessibilidade -->
+    <div id="accessibility-info" class="accessibility-info">
+        <h2>Acessibilidade do Site</h2>
+        <form id="accessibility-form">
+            <div class="accessibility-option">
+                <label for="contrast-mode">
+                    <i class="fas fa-adjust"></i> Alto Contraste:
+                </label>
+                <input type="checkbox" id="contrast-mode" name="contrast-mode">
+            </div>
+            <div class="accessibility-option">
+                <label for="increase-text">
+                    <i class="fas fa-search-plus"></i> Aumentar o Texto:
+                </label>
+                <input type="checkbox" id="increase-text" name="increase-text">
+            </div>
+            <div class="accessibility-option">
+                <label for="gray-scale">
+                    <i class="fas fa-image"></i> Escala de Cinza:
+                </label>
+                <input type="checkbox" id="gray-scale" name="gray-scale">
+            </div>
+            <button type="button" id="close-accessibility-info">Fechar</button>
+        </form>
+    </div>
+
+    <main>
+        <section class="about">
+            <h1>Sobre o Curso</h1>
+            <p>O curso de Engenharia da Computação oferece uma formação completa e moderna, com foco em tecnologias emergentes e práticas inovadoras. Nossos alunos têm acesso a um currículo atualizado, composto por disciplinas teóricas e práticas, preparando-os para desafios reais do mercado.</p>
+            <h2>Currículo</h2>
+            <p>Nossa grade curricular inclui disciplinas como Programação Avançada, Inteligência Artificial, Redes de Computadores, Sistemas Embarcados e muito mais.</p>
+            <h2>Corpo Docente</h2>
+            <p>Contamos com um time de professores altamente qualificados, com experiência acadêmica e profissional nas áreas mais inovadoras da Engenharia da Computação.</p>
+            
+            <section class="professores">
+                <h2>Alguns de nossos Professores</h2>
+                <div class="professor-grid">
+                    <div class="professor-item">
+                        <img src="/Recursos/Imagens/Prof.Luis.png" alt="Prof. Luis Henrique Rauber">
+                        <p><strong>Prof. Luis Henrique Rauber</strong></p>
+                      <!--  <p>Especialista em Redes de Computadores e cibersegurança.</p>-->
+                    </div>
+                    <div class="professor-item">
+                        <img src="/Recursos/Imagens/Prof.Filipe.png" alt="Prof. Filipe Panta Flores">
+                        <p><strong>Prof. Filipe Panta Flores</strong></p>
+                      <!--  <p>Especialista em Desenvolvimento de Software e Arquitetura de Sistemas.</p>-->
+                    </div>
+                    <div class="professor-item">
+                        <img src="/Recursos/Imagens/Prof.Samanta.png" alt="Profa. Samanta Marques">
+                        <p><strong>Profa. Samanta Marques</strong></p>
+                     <!--   <p>Mestre em Inteligência Artificial e Engenharia de Dados.</p>-->
+                    </div>
+                    <div class="professor-item">
+                        <img src="/Recursos/Imagens/Prof.Lucas.png" alt="Prof. Lucas Reis">
+                        <p><strong>Prof. Lucas Reis</strong></p>
+                      <!--  <p>Engenheiro de Software e especialista em Sistemas Embarcados.</p>-->
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Curso de Engenharia da Computação. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script>
+        // Função para aplicar as opções de acessibilidade
+    if (localStorage.getItem("highContrast") === "true") {
+        document.body.classList.add("high-contrast");
+        document.getElementById("contrast-mode").checked = true;
+    }
+
+    if (localStorage.getItem("largeText") === "true") {
+        document.body.classList.add("large-text");
+        document.getElementById("increase-text").checked = true;
+    }
+
+    if (localStorage.getItem("grayScale") === "true") {
+        document.body.classList.add("gray-scale");
+        document.getElementById("gray-scale").checked = true;
+    }
+
+    document.getElementById("contrast-mode").addEventListener("change", function () {
+        document.body.classList.toggle("high-contrast", this.checked);
+        localStorage.setItem("highContrast", this.checked);
+    });
+
+    document.getElementById("increase-text").addEventListener("change", function () {
+        document.body.classList.toggle("large-text", this.checked);
+        localStorage.setItem("largeText", this.checked);
+    });
+
+    document.getElementById("gray-scale").addEventListener("change", function () {
+        document.body.classList.toggle("gray-scale", this.checked);
+        localStorage.setItem("grayScale", this.checked);
+    });
+
+    const accessibilityIcon = document.getElementById('accessibility-icon');
+    const accessibilityInfo = document.getElementById('accessibility-info');
+    const closeBtn = document.getElementById('close-accessibility-info');
+
+    accessibilityIcon.addEventListener('click', () => {
+        accessibilityInfo.classList.toggle('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        accessibilityInfo.classList.remove('open');
+    });
+    </script>
+</body>
+</html>

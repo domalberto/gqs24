@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestrutura e Recursos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="Conheça a infraestrutura e os recursos disponíveis para os alunos do curso de Engenharia da Computação, incluindo laboratórios, o prédio da Faculdade Dom Alberto e a biblioteca.">
+    <meta name="keywords" content="Infraestrutura, Recursos, Laboratórios, Faculdade Dom Alberto, Biblioteca, Engenharia da Computação">
+    <meta name="author" content="Faculdade Dom Alberto">
+    <link rel="icon" href="/Recursos/Icones/Icone-hotsite.ico" type="image/x-icon"> <!-- Ícone da página -->
+
+     <!-- Link para o Font Awesome (para ícones) -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+     <!-- Estilos personalizados para os ícones -->
+     <style>
+         /* Tamanho e cor dos ícones */
+         .accessibility-option i {
+             color: white; /* Cor branca */
+             font-size: 16px; /* Tamanho reduzido dos ícones */
+             margin-right: 8px; /* Espaço entre o ícone e o texto */
+         }
+     </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre o Curso</a></li>
+                <li><a href="infraestrutura.html">Infraestrutura</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="admissao.html">Admissão e Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Ícone de acessibilidade -->
+        <div id="accessibility-icon" class="accessibility-icon">
+            <img src="../Recursos/Imagens/acessibilidade.png" alt="Acessibilidade">
+        </div>
+    </header>
+
+    <!-- Aba de acessibilidade -->
+    <div id="accessibility-info" class="accessibility-info">
+        <h2>Acessibilidade do Site</h2>
+        <form id="accessibility-form">
+            <div class="accessibility-option">
+                <label for="contrast-mode">
+                    <i class="fas fa-adjust"></i> Alto Contraste:
+                </label>
+                <input type="checkbox" id="contrast-mode" name="contrast-mode">
+            </div>
+            <div class="accessibility-option">
+                <label for="increase-text">
+                    <i class="fas fa-search-plus"></i> Aumentar o Texto:
+                </label>
+                <input type="checkbox" id="increase-text" name="increase-text">
+            </div>
+            <div class="accessibility-option">
+                <label for="gray-scale">
+                    <i class="fas fa-image"></i> Escala de Cinza:
+                </label>
+                <input type="checkbox" id="gray-scale" name="gray-scale">
+            </div>
+            <button type="button" id="close-accessibility-info">Fechar</button>
+        </form>
+    </div>
+
+    <main>
+        <section class="infra-section">
+            <h1>Infraestrutura e Recursos</h1>
+            <h2>Laboratórios</h2>
+            <p>Nossos laboratórios são equipados com a mais alta tecnologia, incluindo notebooks de ultima geração, estações de trabalho avançadas e equipamentos de rede. Os alunos têm acesso a ambientes ideais para desenvolvimento de projetos e pesquisas.</p>
+            <h2>Prédio da Faculdade Dom Alberto</h2>
+            <div class="infra-image-container">
+                <img src="https://www.gaz.com.br/uploads/2019/11/9-Faculdade-Dom-Alberto-009-190923-Alencar-da-Rosa.jpg" alt="Prédio da Faculdade Dom Alberto - Parte Externa" class="infra-image">
+            </div>
+            <p>A imagem acima mostra a parte externa do prédio da Faculdade Dom Alberto, um dos nossos principais espaços de ensino e pesquisa.</p>
+            <h2>Biblioteca</h2>
+            <p>A biblioteca do curso oferece uma vasta gama de livros e materiais digitais, incluindo publicações recentes sobre as últimas tendências em Engenharia da Computação.</p>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Curso de Engenharia da Computação. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script>
+        // Função para aplicar as opções de acessibilidade
+    if (localStorage.getItem("highContrast") === "true") {
+        document.body.classList.add("high-contrast");
+        document.getElementById("contrast-mode").checked = true;
+    }
+
+    if (localStorage.getItem("largeText") === "true") {
+        document.body.classList.add("large-text");
+        document.getElementById("increase-text").checked = true;
+    }
+
+    if (localStorage.getItem("grayScale") === "true") {
+        document.body.classList.add("gray-scale");
+        document.getElementById("gray-scale").checked = true;
+    }
+
+    document.getElementById("contrast-mode").addEventListener("change", function () {
+        document.body.classList.toggle("high-contrast", this.checked);
+        localStorage.setItem("highContrast", this.checked);
+    });
+
+    document.getElementById("increase-text").addEventListener("change", function () {
+        document.body.classList.toggle("large-text", this.checked);
+        localStorage.setItem("largeText", this.checked);
+    });
+
+    document.getElementById("gray-scale").addEventListener("change", function () {
+        document.body.classList.toggle("gray-scale", this.checked);
+        localStorage.setItem("grayScale", this.checked);
+    });
+
+    const accessibilityIcon = document.getElementById('accessibility-icon');
+    const accessibilityInfo = document.getElementById('accessibility-info');
+    const closeBtn = document.getElementById('close-accessibility-info');
+
+    accessibilityIcon.addEventListener('click', () => {
+        accessibilityInfo.classList.toggle('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        accessibilityInfo.classList.remove('open');
+    });
+    </script>
+</body>
+</html>
