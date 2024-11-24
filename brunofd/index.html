@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inicial do curso de Engenharia da Computação da Faculdade Dom Alberto">
     <title>Engenharia da Computação - Faculdade Dom Alberto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h1>Engenharia da Computação</h1>
         <h4>Faculdade Dom Alberto</h4>
-        <nav>
+        <nav role="navigation" aria-label="Menu principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="images.html">Galeria</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="index.html" aria-current="page">Início</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="about.html" aria-current="false">Sobre</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="images.html" aria-current="false">Galeria</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="contatos.html" aria-current="false">Contatos</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="content">
-            <h2>Curso de Engenharia da Computação</h2>
-            <p>O curso de Engenharia da faculdade Dom Alberto é um curso com conhecimentos multidisciplinares que combinam conhecimentos de programação, controle, eletrônica, cálculo, gestão, economia, física, e outros assuntos pertinentes ao curso. Ele concentra-se no projeto, desenvolvimento e implementação de sistemas computacionais e eletrônicos, desde componentes de hardware até software complexo.</p>
-            <h3>Relatos dos Alunos</h3>
-            <blockquote>
-                <p>O curso me ajudou muito, logo quando comecei o curso pensava que não sabia nada, agora que estou perto do fim tenho certeza disso. - Formando do Curso</p>
-            </blockquote>
+    <main role="main">
+        <div class="container">
+            <div class="content">
+                <h2>Curso de Engenharia da Computação</h2>
+                <p>O curso de Engenharia da faculdade Dom Alberto é um curso com conhecimentos multidisciplinares que combinam conhecimentos de programação, controle, eletrônica, cálculo, gestão, economia, física, e outros assuntos pertinentes ao curso. Ele concentra-se no projeto, desenvolvimento e implementação de sistemas computacionais e eletrônicos, desde componentes de hardware até software complexo.</p>
+                <section aria-labelledby="relatos-heading">
+                    <h3 id="relatos-heading">Relatos dos Alunos</h3>
+                    <blockquote cite="Formando do Curso">
+                        <p>O curso me ajudou muito, logo quando comecei o curso pensava que não sabia nada, agora que estou perto do fim tenho certeza disso.</p>
+                        <footer>- <cite>Formando do Curso</cite></footer>
+                    </blockquote>
+                </section>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>

@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h1>Engenharia da Computação</h1>
         <h4>Faculdade Dom Alberto</h4>
-        <nav>
+        <nav role="navigation" aria-label="Menu principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="images.html">Galeria</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="index.html" aria-current="false">Início</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="about.html" aria-current="false">Sobre</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="images.html" aria-current="false">Galeria</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="contatos.html" aria-current="page">Contatos</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="content">
-            <h2>Para entrar em contato</h2>
-            <p>Entre em contato conosco através dos seguintes meios:</p>
-            <ul>
-                <li>Email: contato@domalberto.edu.br</li>
-                <li>Telefone: (51) 1234-5678</li>
-                <li>Rua Ramiro Barcelos, 892, Rua Thomaz Flores, 175 - Centro, Santa Cruz do Sul - RS, 96810-054</li>
-                <li><a href="https://domalberto.edu.br/">Site do Dom Alberto</a></li>
-            </ul>
+    <main role="main">
+        <div class="container">
+            <div class="content">
+                <h2>Para entrar em contato</h2>
+                <p>Entre em contato conosco através dos seguintes meios:</p>
+                <ul aria-label="Informações de contato">
+                    <li><span aria-label="Email">Email:</span> <a href="mailto:contato@domalberto.edu.br">contato@domalberto.edu.br</a></li>
+                    <li><span aria-label="Telefone">Telefone:</span> <a href="tel:+555112345678">(51) 1234-5678</a></li>
+                    <li><span aria-label="Endereço">Endereço:</span> Rua Ramiro Barcelos, 892, Rua Thomaz Flores, 175 - Centro, Santa Cruz do Sul - RS, 96810-054</li>
+                    <li><a href="https://domalberto.edu.br/" aria-label="Visite o site oficial do Dom Alberto">Site do Dom Alberto</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>

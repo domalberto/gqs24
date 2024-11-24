@@ -3,57 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de imagens do curso de Engenharia da Computação da Faculdade Dom Alberto">
     <title>Galeria da Engenharia da Computação</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Faculdade Dom Alberto</h1>
+    <header role="banner">
+        <h1>Engenharia da Computação</h1>
         <h4>Faculdade Dom Alberto</h4>
-        <nav>
+        <nav role="navigation" aria-label="Menu principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="images.html">Galeria</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="index.html" aria-current="false">Início</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="about.html" aria-current="false">Sobre</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="images.html" aria-current="page">Galeria</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="contatos.html" aria-current="false">Contatos</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <section id="projetos" class="content">
-            <h2>Projetos</h2>
-            <div class="slide active"><img src="imagens/projetos/00.jpg" alt="Projeto 1"></div>
-            <div class="slide"><img src="imagens/projetos/01.jpg" alt="Projeto 2"></div>
-            <div class="slide"><img src="imagens/projetos/02.jpg" alt="Projeto 3"></div>
-            <div class="slide"><img src="imagens/projetos/04.jpg" alt="Projeto 5"></div>
-            <div class="slide"><img src="imagens/projetos/05.jpg" alt="Projeto 6"></div>
-        </section>
-        <section id="infraestrutura" class="content">
-            <h2>Infraestrutura</h2>
-            <div class="slide active"><img src="imagens/infraestrutura/00.jpg" alt="Infraestrutura 1"></div>
-            <div class="slide"><img src="imagens/infraestrutura/01.jpg" alt="Infraestrutura 2"></div>
-            <div class="slide"><img src="imagens/infraestrutura/02.jpg" alt="Infraestrutura 3"></div>
-        </section>
-        <section id="professores" class="content">
-            <h2>Professores</h2>
-            <div class="slide active"><img src="imagens/professor/00.jpg" alt="Professor 1"></div>
-            <div class="slide"><img src="imagens/professor/01.jpg" alt="Professor 2"></div>
-            <div class="slide"><img src="imagens/professor/02.jpg" alt="Professor 3"></div>
-        </section>
-        <section id="empresas" class="content">
-            <h2>Empresas</h2>
-            <div class="slide active"><img src="imagens/empresa/00.jpg" alt="Empresa 1"></div>
-            <div class="slide"><img src="imagens/empresa/01.jpg" alt="Empresa 2"></div>
-            <div class="slide"><img src="imagens/empresa/02.jpg" alt="Empresa 3"></div>
-            <div class="slide"><img src="imagens/empresa/03.jpg" alt="Empresa 4"></div>
-            <div class="slide"><img src="imagens/empresa/04.jpg" alt="Empresa 5"></div>
-        </section>
-        <section id="extras" class="content">
-            <h2>Extras</h2>
-            <div class="slide active"><img src="imagens/extra/00.jpg" alt="Extra 1"></div>
-            <div class="slide"><img src="imagens/extra/01.jpg" alt="Extra 2"></div>
-        </section>
-    </div>
+    <main role="main">
+        <div class="container">
+            <section id="projetos" class="content" aria-labelledby="projetos-heading">
+                <h2 id="projetos-heading">Projetos</h2>
+                <div class="slide active" role="group" aria-roledescription="slide" aria-label="1 de 5">
+                    <img src="imagens/projetos/00.jpg" alt="Alunos apresentando projeto de robótica em laboratório">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 5">
+                    <img src="imagens/projetos/01.jpg" alt="Demonstração de projeto de circuitos eletrônicos">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 5">
+                    <img src="imagens/projetos/02.jpg" alt="Estudantes programando em laboratório de informática">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="4 de 5">
+                    <img src="imagens/projetos/04.jpg" alt="Apresentação de projeto de software em sala de aula">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="5 de 5">
+                    <img src="imagens/projetos/05.jpg" alt="Equipe trabalhando em projeto de sistemas embarcados">
+                </div>
+                <div class="navigation-buttons">
+                    <button class="prev" aria-label="Foto anterior" onclick="changeSlide('prev', this)">Anterior</button>
+                    <button class="next" aria-label="Próxima foto" onclick="changeSlide('next', this)">Próxima</button>
+                </div>
+                <script>
+                    function changeSlide(direction, button) {
+                        const section = button.closest('section');
+                        const slides = section.querySelectorAll('.slide');
+                        let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+                        
+                        slides[currentIndex].classList.remove('active');
+                        
+                        if (direction === 'next') {
+                            currentIndex = (currentIndex + 1) % slides.length;
+                        } else {
+                            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                        }
+                        
+                        slides[currentIndex].classList.add('active');
+                        
+                        // Update ARIA label
+                        const newSlide = slides[currentIndex];
+                        newSlide.setAttribute('aria-label', `${currentIndex + 1} de ${slides.length}`);
+                    }
+                </script>
+            </section>
+            <section id="infraestrutura" class="content" aria-labelledby="infraestrutura-heading">
+                <h2 id="infraestrutura-heading">Infraestrutura</h2>
+                <div class="slide active" role="group" aria-roledescription="slide" aria-label="1 de 3">
+                    <img src="imagens/infraestrutura/00.jpg" alt="Laboratório de informática moderno com computadores">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 3">
+                    <img src="imagens/infraestrutura/01.jpg" alt="Laboratório de eletrônica com equipamentos especializados">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 3">
+                    <img src="imagens/infraestrutura/02.jpg" alt="Biblioteca com acervo técnico especializado">
+                </div>
+                <div class="navigation-buttons">
+                    <button class="prev" aria-label="Foto anterior" onclick="changeSlide('prev', this)">Anterior</button>
+                    <button class="next" aria-label="Próxima foto" onclick="changeSlide('next', this)">Próxima</button>
+                </div>
+                <script>
+                    function changeSlide(direction, button) {
+                        const section = button.closest('section');
+                        const slides = section.querySelectorAll('.slide');
+                        let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+                        
+                        slides[currentIndex].classList.remove('active');
+                        
+                        if (direction === 'next') {
+                            currentIndex = (currentIndex + 1) % slides.length;
+                        } else {
+                            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                        }
+                        
+                        slides[currentIndex].classList.add('active');
+                        
+                        // Update ARIA label
+                        const newSlide = slides[currentIndex];
+                        newSlide.setAttribute('aria-label', `${currentIndex + 1} de ${slides.length}`);
+                    }
+                </script>
+            </section>
+            <section id="professores" class="content" aria-labelledby="professores-heading">
+                <h2 id="professores-heading">Professores</h2>
+                <div class="slide active" role="group" aria-roledescription="slide" aria-label="1 de 3">
+                    <img src="imagens/professor/00.jpg" alt="Professor lecionando em laboratório de eletrônica">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 3">
+                    <img src="imagens/professor/01.jpg" alt="Professora orientando alunos em projeto">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 3">
+                    <img src="imagens/professor/02.jpg" alt="Professor demonstrando conceitos de programação">
+                </div>
+                <div class="navigation-buttons">
+                    <button class="prev" aria-label="Foto anterior" onclick="changeSlide('prev', this)">Anterior</button>
+                    <button class="next" aria-label="Próxima foto" onclick="changeSlide('next', this)">Próxima</button>
+                </div>
+                <script>
+                    function changeSlide(direction, button) {
+                        const section = button.closest('section');
+                        const slides = section.querySelectorAll('.slide');
+                        let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+                        
+                        slides[currentIndex].classList.remove('active');
+                        
+                        if (direction === 'next') {
+                            currentIndex = (currentIndex + 1) % slides.length;
+                        } else {
+                            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                        }
+                        
+                        slides[currentIndex].classList.add('active');
+                        
+                        // Update ARIA label
+                        const newSlide = slides[currentIndex];
+                        newSlide.setAttribute('aria-label', `${currentIndex + 1} de ${slides.length}`);
+                    }
+                </script>
+            </section>
+            <section id="empresas" class="content" aria-labelledby="empresas-heading">
+                <h2 id="empresas-heading">Empresas Parceiras</h2>
+                <div class="slide active" role="group" aria-roledescription="slide" aria-label="1 de 5">
+                    <img src="imagens/empresa/00.jpg" alt="Fachada da empresa parceira de tecnologia">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 5">
+                    <img src="imagens/empresa/01.jpg" alt="Alunos em visita técnica à empresa parceira">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 5">
+                    <img src="imagens/empresa/02.jpg" alt="Laboratório de desenvolvimento em empresa parceira">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="4 de 5">
+                    <img src="imagens/empresa/03.jpg" alt="Estagiários trabalhando em projeto com empresa parceira">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="5 de 5">
+                    <img src="imagens/empresa/04.jpg" alt="Apresentação de projeto em parceria com empresa">
+                </div>
+                <div class="navigation-buttons">
+                    <button class="prev" aria-label="Foto anterior" onclick="changeSlide('prev', this)">Anterior</button>
+                    <button class="next" aria-label="Próxima foto" onclick="changeSlide('next', this)">Próxima</button>
+                </div>
+                <script>
+                    function changeSlide(direction, button) {
+                        const section = button.closest('section');
+                        const slides = section.querySelectorAll('.slide');
+                        let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+                        
+                        slides[currentIndex].classList.remove('active');
+                        
+                        if (direction === 'next') {
+                            currentIndex = (currentIndex + 1) % slides.length;
+                        } else {
+                            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                        }
+                        
+                        slides[currentIndex].classList.add('active');
+                        
+                        // Update ARIA label
+                        const newSlide = slides[currentIndex];
+                        newSlide.setAttribute('aria-label', `${currentIndex + 1} de ${slides.length}`);
+                    }
+                </script>
+            </section>
+            <section id="extras" class="content" aria-labelledby="extras-heading">
+                <h2 id="extras-heading">Atividades Extras</h2>
+                <div class="slide active" role="group" aria-roledescription="slide" aria-label="1 de 2">
+                    <img src="imagens/extra/00.jpg" alt="Evento de tecnologia organizado pela faculdade">
+                </div>
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 2">
+                    <img src="imagens/extra/01.jpg" alt="Palestra sobre inovação tecnológica">
+                </div>
+                <div class="navigation-buttons">
+                    <button class="prev" aria-label="Foto anterior" onclick="changeSlide('prev', this)">Anterior</button>
+                    <button class="next" aria-label="Próxima foto" onclick="changeSlide('next', this)">Próxima</button>
+                </div>
+                <script>
+                    function changeSlide(direction, button) {
+                        const section = button.closest('section');
+                        const slides = section.querySelectorAll('.slide');
+                        let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+                        
+                        slides[currentIndex].classList.remove('active');
+                        
+                        if (direction === 'next') {
+                            currentIndex = (currentIndex + 1) % slides.length;
+                        } else {
+                            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                        }
+                        
+                        slides[currentIndex].classList.add('active');
+                        
+                        // Update ARIA label
+                        const newSlide = slides[currentIndex];
+                        newSlide.setAttribute('aria-label', `${currentIndex + 1} de ${slides.length}`);
+                    }
+                </script>
+            </section>
+        </div>
+    </main>
     <script src="scripts.js"></script>
 </body>
 </html>
